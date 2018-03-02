@@ -16,10 +16,10 @@ Get <script src=""*/
 function saveData(dataFile)
 {
  console.log("dataFile = "+dataFile)
- var dF = JSON.stringify(dataFile)
+ var stringData = JSON.stringify(dataFile)
  $.ajax({
   url: "save.php",
-  data: dF,
+  data: stringData,
   type: 'POST',
   success:function(data) 
   {
