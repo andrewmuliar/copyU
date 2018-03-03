@@ -36,7 +36,7 @@ for($i = 0; $i < count($ar[1]); $i++)
    $file_write = fopen($directory, 'w');
    fwrite($file_write, $content);
    fclose($file_write);
-  }
+  }	
  echo 'Upload finished';
 } 
 ?>
