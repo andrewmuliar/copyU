@@ -6,13 +6,10 @@ $file_name = 'uploads/php.html';
 $file_write = fopen($file_name, 'w');
 fwrite($file_write, $content);
 $len = strlen($content);
-/*Get all "link href=""
-Get <img src=""
-Get <script src=""*/
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-//
+//Saving site to files
 function saveData(dataFile)
 {
  console.log("dataFile = "+dataFile)
@@ -44,8 +41,11 @@ function getWhatYouNeed(tagName)
  return list
 }
 
+//Miracle start here
 saveData(getWhatYouNeed('link'))
 saveData(getWhatYouNeed('script'))
 saveData(getWhatYouNeed('img'))
+
+//Here your site
 window.open("http://localhost/php_request/uploads/php.html","_blank")
 </script>
