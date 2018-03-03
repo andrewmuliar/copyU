@@ -1,5 +1,6 @@
 <?php
 $post = file_get_contents('php://input',true);
+echo 'Starting upload...';
 $ar = json_decode($post); //to array from string
 $domain = $ar[0]; //root from user to explode url
 echo var_export($ar);
@@ -13,7 +14,6 @@ for($i = 0; $i < count($ar[1]); $i++)
  }
  //remove from link domain name
  $no_domain = str_replace($root, $domain, $ar[1][$i]);
- echo ' Replacing '.$no_domain;
  $no_domain = str_replace($domain, '', $no_domain);
  //get posisiton of last slash for directory 
  $last_slash = strripos($no_domain, '/');
@@ -23,9 +23,7 @@ for($i = 0; $i < count($ar[1]); $i++)
  if(!is_dir($directory)) //if no exist
   mkdir($directory, 0777, true);
  else
-  echo " dir =  ".$directory;
   $content = file_get_contents($ar[1][$i], true); 
-  echo "get fontnet from ".$ar[1][$i];
   if($content == false) // If script or somethink cannot upload
   {
    $file_error = fopen('/xampp/htdocs/php_request/uploads/error.txt', 'w');
@@ -35,10 +33,10 @@ for($i = 0; $i < count($ar[1]); $i++)
   else
   {
    $directory .= substr($no_domain,$last_slash);
-   echo ' last dir = '.$directory;
    $file_write = fopen($directory, 'w');
    fwrite($file_write, $content);
    fclose($file_write);
   }
+ echo 'Upload finished';
 } 
 ?>
