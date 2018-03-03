@@ -2,7 +2,7 @@
 $website = $_GET['link'];
 $content = file_get_contents($website);
 echo var_export($content,true);
-$file_name = 'uploads/php.html';
+$file_name = 'uploads/index.html';
 $file_write = fopen($file_name, 'w');
 fwrite($file_write, $content);
 $len = strlen($content);
@@ -12,11 +12,17 @@ $len = strlen($content);
 //Saving site to files
 function saveData(dataFile)
 {
- console.log("dataFile = "+dataFile)
- var stringData = JSON.stringify(dataFile)
+ //console.log("dataFile = "+dataFile)
+ var url = document.location.href
+ var index = url.search("root")
+ var root = url.substring(index+5, url.length) //root= 
+ var arrayToSend = []
+ arrayToSend.push(root)
+ arrayToSend.push(dataFile) // New array data with 'root' 
+ var stringData = JSON.stringify(arrayToSend) // json
  $.ajax({
   url: "save.php",
-  data: stringData,
+  data: stringData, //sending
   type: 'POST',
   success:function(data) 
   {
@@ -47,5 +53,5 @@ saveData(getWhatYouNeed('script'))
 saveData(getWhatYouNeed('img'))
 
 //Here your site
-window.open("http://localhost/php_request/uploads/php.html","_blank")
+window.open("http://localhost/php_request/uploads/index.html","_blank")
 </script>

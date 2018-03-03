@@ -1,18 +1,20 @@
 <?php
 $post = file_get_contents('php://input',true);
 $ar = json_decode($post); //to array from string
-$domain = $ar['root']; //root from user to explode url
+$domain = $ar[0]; //root from user to explode url
 $root = 'http://localhost/php_request/'; //host root for deploy url
-$dom_count = strlen($domain);
-for($i = 0; $i < count($ar); $i++)
+echo var_export($ar, true);
+echo 'Array item = '.$ar[1][0].' end ';
+for($i = 0; $i < count($ar); $i++) 
 {
- if(substr($ar[$i], 0, strlen($root)) == $root)
+ /*if(substr($ar[1][$i], 0, strlen($root)) == $root)
  {
-  $ar[$i] = str_replace($root, $domain, $ar[$i]);
+  $ar[1][$i] = str_replace($root, '', $ar[1][$i]);
+  echo ' Replacing '.$ar[1][$i];
   //deleting our $root from directory
- }
+ }*/
  //remove from link domain name
- $no_domain = str_replace('http://localhost/php_request/', $domain, $ar[$i]);
+ $ar[1][$i] = str_replace('http://localhost/php_request/', $domain, $ar[1][$i]);
  $no_domain = str_replace($domain, '', $no_domain);
  //get posisiton of last slash for directory 
  $last_slash = strripos($no_domain, '/');
@@ -22,17 +24,17 @@ for($i = 0; $i < count($ar); $i++)
  if(!is_dir($directory)) //if no exist
   mkdir($directory, 2, true);
  else
-  echo $directory;
-  $content = file_get_contents($ar[$i], true);
+  echo " dir =  ".$directory;
+  $content = file_get_contents($ar[1][$i], true); //Tut podvog
   if($content == false) // If script or somethink cannot upload
   {
    $file_error = fopen('/xampp/htdocs/php_request/uploads/error.txt', 'w');
-   fwrite($file_error, $ar[$i]);
+   fwrite($file_error, $ar[1][$i]);
    fclose($file_error);
   }
   else
   {
-   $full_path = $directory.strrchr($no_domain, '/');
+   $full_path = $directory.'/';
    $file_write = fopen($full_path, 'w');
    fwrite($file_write, $content);
    fclose($file_write);

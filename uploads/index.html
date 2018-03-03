@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="Barduck, Київ, Киев, Kiev, Кальян, Бар, Отдых, Відпочинок, Найатмосферніший заклад столиці">
+  <meta name="description" content="Абсурд-паб BARDUCK - це якісний відпочинок!)">  
+  <link rel="icon" href="commons/Logo.png" type="image/png" sizes="16x16">
+ <title>
+  Barduck
+ </title>
+<!-- Latest compiled and minified CSS -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style2.css" type="text/css">
+<style type="text/css">
+.moonSugar {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.moonSugar-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform;
+    width: 14px;
+    height: 14px;
+    background: url("commons/snowflake.png") center center/14px 14px no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="moonSugar"></div>  
+<!-- TOP -->
+ <nav class="nav navbar-fixed-top menulist">
+  <div class="container">
+  <!--Список меню для маленьких екранів-->
+   <button type="button" class="navbar-toggle" style="background: black;" data-toggle="collapse" data-target="#BarduckMenu">
+     <span class="icon-bar" style="background: yellow;"></span>
+     <span class="icon-bar" style="background: yellow;"></span>
+     <span class="icon-bar" style="background: yellow;"></span>                        
+    </button>
+    
+    <a class="navbar-brand" href="#Welcome" style="padding:4px;">
+     <img src="commons/Logo.png" style="border:none; width:65px;"/>
+    </a>
+     
+    <div class="collapse navbar-collapse" id="BarduckMenu">
+     <ul class="nav navbar-nav">
+      <li><a href="#Bonus">Акції</a></li>      
+      <li><a href="#today">Сьогодні</a></li>
+      <li><a href="Afisha.html">Афіші</a></li>
+      <li><a href="#Event" data-toggle="modal" data-target="#RezervModal">Резерв</a></li>
+      <li><a href="#Menu">Меню</a></li>
+      <li><a href="#Team">Команда</a></li>
+      <li><a href="#FindUs">Як нас знайти</a></li>
+      <li><a href="https://www.facebook.com/pg/barduckkyiv/photos/?ref=page_internal" target="_blank">Галерея</a></li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+
+  <div class="wrapper">
+   <div class="container">
+
+   </div>
+    <!-- <div>
+      <a class="inst" style="margin-left:-115px; margin-top: 15px;" href="https://www.instagram.com/explore/locations/8090829/" target="_blank"></a>
+      <a class="face" style="margin-left:-25px; margin-top: 15px;" href="https://www.facebook.com/bar.ducky/?fref=ts" target="_blank"></a>
+    </div> -->
+  </div>
+<!-- END TOP -->
+<!-- TODAY -->
+  <div class="welcome" id="Welcome">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-6" style="margin-bottom: 105px;">
+       <center style="position: relative;">
+        <img src="commons/Logo.png" class="img-responsive" style="margin-top:25px; margin-bottom: 25px;" alt="Бардак">
+          <a class="inst" style="margin-left:10px; margin-top: 15px;" href="https://www.instagram.com/barduckkyiv/" target="_blank"></a>
+          <a class="face" style="margin-left:-80px; margin-top: 14px;" href="https://www.facebook.com/barduckkyiv" target="_blank"></a>
+       </center>
+      </div>
+      <div class="col-lg-6">
+       <h2>Ласкаво просимо в Barduck</h2>
+       <div class="textLayout">
+        <p>BARDUCK — це те місце, де кожен може відпочити на повну.</p>
+        <p>BARDUCK надасть Вам для цього все необхідне: покажіть свою силу у змаганнях з арм-реслінгу за нашим професійним столом, пограйте з друзями в Мортал Комбат чи Тейкен на ігрових платформах Sega Mega Drive та PS3, зіграйте у настільні ігри, спробуйте найекстримальніші коктейлі з нашої авторської карти, фірмові настоянки власного виробництва, ШОТ-СЕТИ, сидр та пунш. Замовте «Ляща» чи «Брєд», на крайній випадок!!!)) </p>
+        <p>Втамуйте свій голод купою пивних снеків, піцою, бургером чи іншими смачними стравами з нашого меню української та європейської кухні! У нас не буває сумно та одноманітно: спортивні трансляції, тематичні вечірки, перегляд фільмів та мультсеріалів)… І це за демократичну ціну!</p>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  
+  <div class="todayEvent" id="today">
+   <div class="container">
+    <div class="row" style="padding-top:15px; padding-bottom: 10px;">
+     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+       <h2>Сьогодні в Бардаку</h2>
+         <p class="textLayout">
+Запрошуємо всіх Гостей та друзів</p>
+<p class="textLayout">Це буде МЕГА КРУТО! Welcome!</p>
+  <center><input type="button" value="Резервувати" class="brdBut" data-toggle="modal" data-target="#RezervModal"></center>              
+      <!-- <div class="textLayout">
+        <p style="font-size: 18px; font-weight: normal; text-align: center;">Друзі, чекаємо на Вас вже в повністю <span style="text-decoration: underline;">оновленому закладі!</span></p>
+        <p style="font-size: 18px; font-weight: normal;">Встигни замовити столик!</p>
+       </div>
+      </div>-->
+    </div>
+    <div class="col-lg-6 col-md-6 col col-sm-12 col-xs-12">
+      <img src="Events/barday.jpg" class="img-responsive">
+    </div>
+  </div>
+ <!--    <div class="row" style="margin-bottom: 15px;">
+      <div class="col-md-4 col-xs-12">
+        <p class="textLayout"></p>
+      </div>          
+    </div> -->
+    <!--         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators 
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+
+              <!-- Wrapper for slides
+              <div class="carousel-inner">
+                  <div class="item active">
+                  <img src="Events/newmenu2.jpg" alt="Chicago">
+                  <div class="carousel-caption">
+                    <h3 style="color:yellow;"></h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="Events/newmenu.jpg" alt="New York">
+                  <div class="carousel-caption">
+                    <h3 style="color:yellow;"></h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls 
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Назад</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Вперед</span>
+              </a>
+             </div> -->
+
+  </div>
+</div>
+  <div class="bonuses" id="Bonus"> 
+   <h2>Плюшки в Бардаку</h2>
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+       <a href="#" class="thumbnail">
+        <img src="Afisha/viski.jpg" style="width: 100%;" alt="Бардак Афіші">
+       </a>        
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+       <a href="#" class="thumbnail">
+         <img src="Events/instaac.jpg" style="width:100%;" alt="Бардак Афіші">
+       </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+       <a href="#" class="thumbnail">
+         <img src="Afisha/pl3.jpg" style="width:100%;" alt="Бардак Афіші">
+       </a>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+       <a href="#" class="thumbnail">
+        <img src="Afisha/iq.jpg" style="width:100%;" alt="Бардак Афіші">
+       </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+       <a href="#" class="thumbnail">
+         <img src="Afisha/dr.jpg" style="width:100%;" alt="Бардак Афіші">
+       </a>
+      </div>
+     </div>      
+    </div>
+   </div>
+
+  <div class="stuff" id="Team">
+   <div class="container">
+    <h2>Команда Бардак</h2>
+    <div class="row">
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/bodya.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Бармен Богдан</h3>
+       </div>     
+      </div>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/barmen2.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Бармен Гоша</h3>
+       </div>     
+      </div>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/fiz.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Офіціант Вася</h3>
+       </div>     
+      </div>
+     </div> 
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/fiz2.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Офіціант Катя</h3>
+       </div>     
+      </div>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/fiz3.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Офіціант Юля</h3>
+       </div>     
+      </div>
+     </div> 
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/fotograph.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Фотограф Віталій Музика</h3>
+       </div>     
+      </div>
+     </div>  
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/tamada.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption">
+        <h3 style="text-align: center;">Ведучий Тім</h3>
+       </div>     
+      </div>
+     </div>  
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="thumbnail">
+       <img src="Stuff/admin.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
+       <div class="caption" style="text-overflow: ellipsis;">
+        <h3 style="text-align: center;">Адміністратор Ксюша</h3>
+       </div>     
+      </div>
+     </div>
+
+     
+    </div>
+   </div>
+  </div>
+
+  <!--<div class="smachno">
+   <h2>Смачно в Бардаку</h2>
+   <div class="container">
+     <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="media" style="margin-top:15px;">
+          <div class="media-left">
+            <a href="#">
+             <img class="media-object foodimages" src="food/bread.jpg" alt="Смачно в Бардаку">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">ФСБ</h3>
+            <p>Оновлені ФСБ (Фірмові Сухарики Бардак) з сирно-часниковим соусом - новий улюблений снек під пивас - варто спробувати, особливо коли рекомендує </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="media" style="margin-top:15px;">
+          <div class="media-left">
+            <a href="#">
+             <img class="media-object foodimages" src="food/burger.jpg" alt="Смачно в Бардаку">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Пізанський бургер</h3>
+            <p>Відрекомендуємо Пізанський трьохповерховий міні-бургер зі шматочками приправленої свинини)
+            шукайте його також з різнокольоровими булками)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="media" style="margin-top:15px;">
+          <div class="media-left">
+            <a href="#">
+             <img class="media-object foodimages" src="food/american.jpg" alt="Смачно в Бардаку">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Панкейк</h3>
+            <p>Улюблений американський десерт - панкейки з шоколадом (витікає при розрізанні) з бананами та карамельним топінгом - #Смачнно_в_Бардаку рекомендує, друзі!</p>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+  </div> -->
+
+
+  <div class="menu" id="Menu">
+   <h2>Меню</h2>
+    <div class = "row" style="margin-top: 15px;">
+      <div class="col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/6.jpg" style="width:100%;"/></div>          
+      <div class="col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/1.jpg" style="width:100%;"/></div>
+    </div>
+    <div class = "row" style="margin-top: 15px;">
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/2.jpg" style="width:100%;"/></div>
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/3.jpg" style="width:100%;"/></div>
+  </div>
+    <div class = "row" style="margin-top: 15px;">
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/4.jpg" style="width:100%;"/></div>
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 55px;"><img src="NewMenu/5.jpg" style="width:100%;"/></div>
+   </div>
+   <div class = "row" style="margin-top: 15px;">
+      <div class=" col-md-offset-3 col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/7.jpg" style="width:100%;"/></div>          
+    </div>   
+  </div>
+  </div>
+
+  <div class="findUs" id="FindUs">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0536965625347!2d30.506561755740663!3d50.4401004733228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfd6af29bde32c99!2z0JHQkNCg0JTQkNCa!5e0!3m2!1suk!2sua!4v1476784496152" 
+        width="100%" 
+        height="400" 
+        frameborder="0" style="border:1px solid black;" allowfullscreen></iframe>
+       </div> 
+       <div class="col-lg-4">
+         <p style="font-size:24px; font-weight: bold; text-transform: uppercase; margin-top:10px;">Контакти</p>
+         <p>Бар BARDUCK</p>
+         <p><b>вул. Тарасівська, 3</b></p>
+         <p>Резерв столика та інфа:</p>
+         <!--<p>
+          <a href="0444518838">(044) 451 88 38</a>
+         </p>-->
+         <p>
+          <a href="0634153331">(063) 415 33 31</a>
+         </p>
+          <p style="float:left">Ми працюємо:</p>
+          <p style="float:left;"> Пн-Чт: 11:00 - 23:00</p>
+          <p style="float:left;">Пт: 11:00 - 05:00</p>
+          </p>
+          <p style="float:left;">Сб: 16:00 - 05:00</p>
+          <p style="float:left;">Нд: 16:00 - 23:00</p>
+       </div>
+      </div>
+    </div>
+  </div>
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <span itemprop="вул.Тарасівська, 3"></span>
+  <span itemprop="Київ"></span>
+  <span itemprop="02000"></span>
+  <span itemprop="Київ"></span>
+  <span itemprop="Укаїна"></span>
+  <span itemprop="Бардак найкраще місце відпочинку"></span>
+</div>
+
+<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+  <span property="latitude" content="50.4402333,30.5062008,17"></span>
+  <span property="longitude" content="0.4402333!4d30.5083895"></span>
+</span>
+
+      <div id="RezervModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+         <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Резервування столику Barduck</h4>
+      </div>
+      <div class="modal-body">
+       <div class="row" style="margin-bottom:5px;">
+        <div class="col-md-3">Ваше ім'я:<span style="color:red;">*</span></div>
+        <div class="col-md-3"><input type="text" placeholder="" id="ClientName"/>
+        </div>
+       </div>
+       <div class="row" style="margin-bottom:5px;">
+        <div class="col-md-3">Кількість осіб:<span style="color:red;">*</span></div>
+        <div class="col-md-3"><input type="number" min="1" max="15" id="ClientCount"/>
+        </div>
+       </div>
+       <div class="row" style="margin-bottom:5px;">
+        <div class="col-md-3">Час та дата:<span style="color:red;">*</span></div>
+        <div class="col-md-6">
+         <input type="time" id="TimeClient" style="margin-right:5px;"/>
+         <input type="date" id="ClientDay" min="2018-02-27"/>
+        </div>
+       </div>
+       <div class="row" style="margin-bottom:5px;">
+        <div class="col-md-3">Номер телефону<span style="color:red;">*</span>:</div>
+        <div class="col-md-3"><input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' id="ClientTel" title='Формат: 099 9999-9999)'> 
+        </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <div style="float:left;">
+        <p style="text-align: left;">Деталі за телефонами:</p>
+        <p style="text-align: left;">(063) 415 33 31</p>
+       <!-- <p style="text-align: left;">(044) 451 88 38</p> -->
+        <div class="alert alert-warning" id="FailMail" role="alert" style="display: none;">
+          <a href="#" class="alert-link">Заповніть усі поля будь ласка</a>
+        </div>
+        <div class="alert alert-success" role="alert" id="TrueMail" style="display: none;">
+          <a href="#" class="alert-link">Столик успішно зарезервований чекайте на дзінок адміністратора!</a>
+        </div>
+       </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Скасувати</button>
+        <button type="button" class="btn btn-primary" id="Rezerv">Зарезервувати</button>
+      </div>
+         </div>
+        </div>     
+       </div>
+     </div> 
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/turn.min.js"></script>
+<script src="js/moon-sugar.min.js"></script> -->
+<script type="text/javascript">
+//MENU TURN JS
+/*REZERV SEND MAIL*/
+//  $(document).ready(function()
+//  {
+//   // moonSugar.init();
+//   /*Визначаємо розміри книжки для меню*/
+//   // var Wdth = window.innerWidth
+//   // var Hdth = Wdth/2*1.198871650211566+"px"
+//   // Wdth+="px"
+//   // $("#flipbook").turn({
+//   //   width:Wdth,
+//   //   height:Hdth,
+//   //   autoCenter: true
+//   // });
+//   //  $(".pager li").click(function()
+//   //  {
+//   //   var ID = $(this).attr("id")
+//   //   $("#flipbook").turn("page",ID) 
+//   //  })
+// //Реагуємо на скролл
+//  $(window).scroll(function() 
+//  {
+//   if(window.pageYOffset >=1100)
+//   {
+//    $("#flipbook").turn("page",3) 
+//   }
+//   if(window.pageYOffset <=1100) $("#flipbook").turn("page",1) 
+//  })
+
+// /*Розгортання слайдера для повнго прочитання тексту про робітника*/
+// // $(".slideMe").click(function()
+// // {
+// //  if($(this).parent().children(".aboutStuff").css("height") == "150px")
+// //  {
+// //   $(this).parent().children(".aboutStuff").animate({"height":"400px"},500)
+// //   $(this).html("Згорнути...")
+// //  }
+// //  else
+// //  {
+// //   $(this).parent().children(".aboutStuff").animate({"height":"150px"},500)
+// //   $(this).html("Розгорнути...")
+// //  }
+// })
+
+
+/*Резерв столику*/
+  $("#Rezerv").click(function()
+  {
+   if($("#ClientName").val().length == 0 || $("#ClientCount").val().length == 0 || 
+      $("#TimeClient").val().length == 0 || $("#ClientDay").val().length == 0 || $("#ClientTel").val().length == 0)
+   {
+    $("#FailMail").show()
+    setTimeout(function() {
+        $("#FailMail").hide();
+       }, 7000);
+   }
+   else
+   {
+    var ClientName  = $("#ClientName").val()
+    var ClientCount = $("#ClientCount").val() 
+    var TimeClient  = $("#TimeClient").val()
+    var ClientDay   = $("#ClientDay").val()
+    var ClientTel   = $("#ClientTel").val()
+    $.post("rezerv.php",
+    {
+     Name:ClientName,
+     Count:ClientCount,
+     Time:TimeClient,
+     Day:ClientDay,
+     Tel:ClientTel
+    },
+    function(data,status)
+     {
+      if(data == 200)
+      {
+       $("#TrueMail").show()
+       setTimeout(function() {
+        $("#TrueMail").hide();
+        $("#ClientName").val("");
+        $("#ClientCount").val("");
+        $("#TimeClient").val("");
+        $("#ClientDay").val("");
+        $("#ClientTel").val("");
+       }, 7000);
+      }
+      console.log(ClientName+" "+ClientCount+" "+TimeClient+" "+ClientDay+" "+ClientTel)
+     })
+   }
+  })
+ </script>

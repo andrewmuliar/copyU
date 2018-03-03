@@ -1,0 +1,1 @@
+http://localhost/php_request/js/bootstrap.min.js
