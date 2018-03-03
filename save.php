@@ -1,16 +1,15 @@
 <?php
 $post = file_get_contents('php://input',true);
-$domain = 'https://iqoption.com/land/binary-options-demo/en/';
-$root = 'http://localhost/php_request/';
-$dom_count = strlen($domain);
 $ar = json_decode($post); //to array from string
+$domain = $ar['root']; //root from user to explode url
+$root = 'http://localhost/php_request/'; //host root for deploy url
+$dom_count = strlen($domain);
 for($i = 0; $i < count($ar); $i++)
 {
- echo 'result of strpos = '.strpos($ar[$i],"http://localhost/php_request/");
  if(substr($ar[$i], 0, strlen($root)) == $root)
  {
   $ar[$i] = str_replace($root, $domain, $ar[$i]);
-  //deleting our root from directory
+  //deleting our $root from directory
  }
  //remove from link domain name
  $no_domain = str_replace('http://localhost/php_request/', $domain, $ar[$i]);
@@ -18,8 +17,8 @@ for($i = 0; $i < count($ar); $i++)
  //get posisiton of last slash for directory 
  $last_slash = strripos($no_domain, '/');
  //creating directory from root folder
- $directory  = '/xampp/htdocs/php_request/uploads/'.substr_replace($no_domain, '', $last_slash);
- echo 'DIRECTORY = '.$directory;
+ $directory  = '/xampp/htdocs/php_request/uploads/'.substr_replace($no_domain, '', $last_slash); 
+//directory to safe file
  if(!is_dir($directory)) //if no exist
   mkdir($directory, 2, true);
  else

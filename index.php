@@ -1,5 +1,5 @@
 <?php
-$website = 'https://iqoption.com/land/binary-options-demo/en/';
+$website = $_GET['link'];
 $content = file_get_contents($website);
 echo var_export($content,true);
 $file_name = 'uploads/php.html';

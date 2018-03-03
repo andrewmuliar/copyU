@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CopyU</title>
+</head>
+<style>
+body
+{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ background:rebeccapurple;
+ height:100vh;
+}
+ div
+ {
+  padding:5px;
+ }
+input
+{
+ font-size:18px;
+ border-top:none;
+ border-left:none;
+ border-right:none;
+ border-radius:3px;
+ padding:15px;
+}
+button
+{
+ transition:all 0.5s;
+ border-radius:3px;
+ padding:13px 93px;
+ font-size:18px;
+ background:royalblue;
+ color:white;
+}
+button:hover
+{
+ transition:all 0.5s;
+ cursor:pointer;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fb83fa+0,e93cec+100;Pink+3D+%232 */
+background: #fb83fa; /* Old browsers */
+background: -moz-linear-gradient(top, #fb83fa 0%, #e93cec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fb83fa 0%,#e93cec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fb83fa 0%,#e93cec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83fa', endColorstr='#e93cec',GradientType=0 ); /* IE6-9 */
+}
+</style>
+<body>
+ <div>
+  <input type = "text" placeholder = "Адрес сайта..." id = "link"/>
+ </div>
+ <div>
+  <input type = "text" placeholder = "Предполагаемый root..." id = "root"/>
+ </div>
+ <div>
+  <button id = "ready">Готово!</button>
+ </div>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script>
+ $(document).ready(function()
+ {
+  $("#ready").click(function()
+  {
+   var link = $("#link").val()
+   link = "http://localhost/php_request/index.php?link="+link
+   link += "?root="+$("#root").val()
+   window.open(link, "_blank")
+  })
+ })
+ </script>
+</body>
+</html>
