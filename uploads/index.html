@@ -1,537 +1,640 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="keywords" content="Barduck, Київ, Киев, Kiev, Кальян, Бар, Отдых, Відпочинок, Найатмосферніший заклад столиці">
-  <meta name="description" content="Абсурд-паб BARDUCK - це якісний відпочинок!)">  
-  <link rel="icon" href="commons/Logo.png" type="image/png" sizes="16x16">
- <title>
-  Barduck
- </title>
-<!-- Latest compiled and minified CSS -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style2.css" type="text/css">
-<style type="text/css">
-.moonSugar {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-.moonSugar-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    will-change: transform;
-    width: 14px;
-    height: 14px;
-    background: url("commons/snowflake.png") center center/14px 14px no-repeat;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Olymp Trade — online trading platform</title>
+    <meta name="description" content="Online trading platform">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" href="https://static.olymptrade.com/lands/common/favicons/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://static.olymptrade.com/lands/common/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://static.olymptrade.com/lands/common/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://static.olymptrade.com/lands/common/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://static.olymptrade.com/lands/common/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://static.olymptrade.com/lands/common/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://static.olymptrade.com/lands/common/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="https://static.olymptrade.com/lands/common/favicons/mstile-144x144.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://static.olymptrade.com/lands/LPL09-03-01en/css/main.css"/>
+    <link rel="stylesheet" href="https://static.olymptrade.com/lands/LPL09-03-01en/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://static.olymptrade.com/lands/landing_game/landing_game_resources/css/style.css"/>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M98VLD');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-<div class="moonSugar"></div>  
-<!-- TOP -->
- <nav class="nav navbar-fixed-top menulist">
-  <div class="container">
-  <!--Список меню для маленьких екранів-->
-   <button type="button" class="navbar-toggle" style="background: black;" data-toggle="collapse" data-target="#BarduckMenu">
-     <span class="icon-bar" style="background: yellow;"></span>
-     <span class="icon-bar" style="background: yellow;"></span>
-     <span class="icon-bar" style="background: yellow;"></span>                        
-    </button>
-    
-    <a class="navbar-brand" href="#Welcome" style="padding:4px;">
-     <img src="commons/Logo.png" style="border:none; width:65px;"/>
-    </a>
-     
-    <div class="collapse navbar-collapse" id="BarduckMenu">
-     <ul class="nav navbar-nav">
-      <li><a href="#Bonus">Акції</a></li>      
-      <li><a href="#today">Сьогодні</a></li>
-      <li><a href="Afisha.html">Афіші</a></li>
-      <li><a href="#Event" data-toggle="modal" data-target="#RezervModal">Резерв</a></li>
-      <li><a href="#Menu">Меню</a></li>
-      <li><a href="#Team">Команда</a></li>
-      <li><a href="#FindUs">Як нас знайти</a></li>
-      <li><a href="https://www.facebook.com/pg/barduckkyiv/photos/?ref=page_internal" target="_blank">Галерея</a></li>
-     </ul>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M98VLD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="lean_overlay"></div>
+<div id="reg-form" class="form">
+    <div class="title">Registration form</div>
+    <div class="sub-title">Register and get <span class="orange">10 000 <span class="olymp-sign">a</span></span> on your account</div>
+    <form action="" method="post" class="form-1">
+        <div class="clearfix">
+            <input type="email" name="email" class="login" placeholder="Email">
+            <input type="password" name="password" class="pass" placeholder="Password">
+        </div>
+        <div class="register-checkbox">
+            <input type="checkbox" id="register-checkbox-1" class="rules" />
+            <label for="register-checkbox-1"></label>
+            <label for="register-checkbox-1">I am of legal age, and I have reviewed and accept <a class="fancybox terms-popup-link" href="#terms-popup">the&nbsp;service&nbsp;agreement.</a></label>
+        </div>
+        <button type="submit">REGISTER</button>
+    </form>
+    <div class="modal-close"></div>
+</div>
+<div id="x2-form" class="form">
+    <div class="title">DOUBLE YOUR<br><span>DEPOSIT</span></div>
+    <div class="sub-title">
+        Deposit your real account within 1 hour after registration <br> and get <span class="orange">+100%</span> from deposit amount
     </div>
-   </div>
-  </nav>
-
-  <div class="wrapper">
-   <div class="container">
-
-   </div>
-    <!-- <div>
-      <a class="inst" style="margin-left:-115px; margin-top: 15px;" href="https://www.instagram.com/explore/locations/8090829/" target="_blank"></a>
-      <a class="face" style="margin-left:-25px; margin-top: 15px;" href="https://www.facebook.com/bar.ducky/?fref=ts" target="_blank"></a>
-    </div> -->
-  </div>
-<!-- END TOP -->
-<!-- TODAY -->
-  <div class="welcome" id="Welcome">
+    <form action="" method="post" class="form-2">
+        <div class="clearfix">
+            <input type="email" name="email" class="login" placeholder="Email">
+            <input type="password" name="password" class="pass" placeholder="Password">
+        </div>
+        <div class="register-checkbox">
+            <input type="checkbox" id="register-checkbox-2" class="rules" />
+            <label for="register-checkbox-2"></label>
+            <label for="register-checkbox-2">I am of legal age, and I have reviewed and accept <a class="fancybox terms-popup-link" href="#terms-popup">the&nbsp;service&nbsp;agreement.</a></label>
+        </div>
+        <button type="submit">REGISTER</button>
+    </form>
+    <div class="modal-close"></div>
+</div>
+<div id="win-form" class="form">
+    <div class="title">Your forecast came true!</div>
+    <div class="desc">
+        You have invested <span>$100</span> and gained <span class="big">$190</span>
+    </div>
+    <div class="sub-title">Register and get <span class="orange">10 000 <span class="olymp-sign">a</span></span> on your account</div>
+    <form action="" method="post" class="form-3">
+        <div class="clearfix">
+            <input type="email" name="email" class="login" placeholder="Email">
+            <input type="password" name="password" class="pass" placeholder="Password">
+        </div>
+        <div class="register-checkbox">
+            <input type="checkbox" id="register-checkbox-3" class="rules" />
+            <label for="register-checkbox-3"></label>
+            <label for="register-checkbox-3">I am of legal age, and I have reviewed and accept <a class="fancybox terms-popup-link" href="#terms-popup">the&nbsp;service&nbsp;agreement.</a></label>
+        </div>
+        <button type="submit">REGISTER</button>
+    </form>
+    <div class="modal-close"></div>
+</div>
+<div id="lose-form" class="form">
+    <div class="title">Unfortunately, your prediction has not come true!</div>
+    <div class="sub-title">Try again or<br> register and get <span class="orange">10 000 <span class="olymp-sign">a</span></span> on your account
+    </div>
+    <form action="" method="post" class="form-4">
+        <div class="clearfix">
+            <input type="email" name="email" class="login" placeholder="Email">
+            <input type="password" name="password" class="pass" placeholder="Password">
+        </div>
+        <div class="register-checkbox">
+            <input type="checkbox" id="register-checkbox-4" class="rules" />
+            <label for="register-checkbox-4"></label>
+            <label for="register-checkbox-4">I am of legal age, and I have reviewed and accept <a class="fancybox terms-popup-link" href="#terms-popup">the&nbsp;service&nbsp;agreement.</a></label>
+        </div>
+        <button type="submit">REGISTER</button>
+    </form>
+    <div class="modal-close"></div>
+</div>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <a href="https://olymptrade.com" class="logo"><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/header-logo.png" alt=""></a>
+            <ul>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/header-logo-01.png" alt="" class="icon">
+                    <div class="desc">Regulated by FinaCom PLC<br>Certified</div>
+                </li>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/header-logo-03.png" alt="" class="icon">
+                    <div class="desc">Deposits are kept<br>in the European bank</div>
+                </li>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/header-logo-04.png" alt="" class="icon">
+                    <div class="desc">SSL certified<br>256 bit Secure Processing</div>
+                </li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/header-top-->
+    <div class="content">
+        <div class="container">
+            <div class="title">Start trading<br>options <span class="orange">now</span>!</div>
+            <ul class="how clearfix">
+                <li>
+                    <div class="icon">
+                        <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/header/1.svg" alt="">
+                    </div>
+                    <h2>CHOOSE YOUR BASIC ASSET</h2>
+                    <p>Currency pairs, silver or gold.</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/header/2.svg" alt="">
+                    </div>
+                    <h2>CHOOSE TRADE AMOUNT</h2>
+                    <p>Invested amount must be not less than 1 usd.</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/header/3.svg" alt="">
+                    </div>
+                    <h2>DECIDE ON PRICE DIRECTION</h2>
+                    <p>Will your chosen asset go up or down?</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/header/4.svg" alt="">
+                    </div>
+                    <h2>GET YOUR PROFIT!</h2>
+                    <p>Earn* on right forecast! Your profit depends on your trading skills.</p>
+                </li>
+            </ul><!--/how-->
+        </div><!--/container-->
+    </div><!--/content-->
+    <a href="#how" class="scroll"><span>TRY IT!</span></a>
+</header><!--/header-->
+<section class="how" id="how">
     <div class="container">
-     <div class="row">
-      <div class="col-lg-6" style="margin-bottom: 105px;">
-       <center style="position: relative;">
-        <img src="commons/Logo.png" class="img-responsive" style="margin-top:25px; margin-bottom: 25px;" alt="Бардак">
-          <a class="inst" style="margin-left:10px; margin-top: 15px;" href="https://www.instagram.com/barduckkyiv/" target="_blank"></a>
-          <a class="face" style="margin-left:-80px; margin-top: 14px;" href="https://www.facebook.com/barduckkyiv" target="_blank"></a>
-       </center>
-      </div>
-      <div class="col-lg-6">
-       <h2>Ласкаво просимо в Barduck</h2>
-       <div class="textLayout">
-        <p>BARDUCK — це те місце, де кожен може відпочити на повну.</p>
-        <p>BARDUCK надасть Вам для цього все необхідне: покажіть свою силу у змаганнях з арм-реслінгу за нашим професійним столом, пограйте з друзями в Мортал Комбат чи Тейкен на ігрових платформах Sega Mega Drive та PS3, зіграйте у настільні ігри, спробуйте найекстримальніші коктейлі з нашої авторської карти, фірмові настоянки власного виробництва, ШОТ-СЕТИ, сидр та пунш. Замовте «Ляща» чи «Брєд», на крайній випадок!!!)) </p>
-        <p>Втамуйте свій голод купою пивних снеків, піцою, бургером чи іншими смачними стравами з нашого меню української та європейської кухні! У нас не буває сумно та одноманітно: спортивні трансляції, тематичні вечірки, перегляд фільмів та мультсеріалів)… І це за демократичну ціну!</p>
-       </div>
-      </div>
-     </div>
-    </div>
-  </div>
-  
-  <div class="todayEvent" id="today">
-   <div class="container">
-    <div class="row" style="padding-top:15px; padding-bottom: 10px;">
-     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-       <h2>Сьогодні в Бардаку</h2>
-         <p class="textLayout">
-Запрошуємо всіх Гостей та друзів</p>
-<p class="textLayout">Це буде МЕГА КРУТО! Welcome!</p>
-  <center><input type="button" value="Резервувати" class="brdBut" data-toggle="modal" data-target="#RezervModal"></center>              
-      <!-- <div class="textLayout">
-        <p style="font-size: 18px; font-weight: normal; text-align: center;">Друзі, чекаємо на Вас вже в повністю <span style="text-decoration: underline;">оновленому закладі!</span></p>
-        <p style="font-size: 18px; font-weight: normal;">Встигни замовити столик!</p>
-       </div>
-      </div>-->
-    </div>
-    <div class="col-lg-6 col-md-6 col col-sm-12 col-xs-12">
-      <img src="Events/barday.jpg" class="img-responsive">
-    </div>
-  </div>
- <!--    <div class="row" style="margin-bottom: 15px;">
-      <div class="col-md-4 col-xs-12">
-        <p class="textLayout"></p>
-      </div>          
-    </div> -->
-    <!--         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators 
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>
-
-              <!-- Wrapper for slides
-              <div class="carousel-inner">
-                  <div class="item active">
-                  <img src="Events/newmenu2.jpg" alt="Chicago">
-                  <div class="carousel-caption">
-                    <h3 style="color:yellow;"></h3>
-                  </div>
+        <div class="title">Check how it works</div>
+        <div class="screen">
+            <div class="screen-top">
+                <div class="col">Price: $100</div>
+                <div class="col">Income: <span class="green-bg">$192</span></div>
+                <div class="col">Profit: <span class="green-text">+92%</span></div>
+            </div>
+            <div class="block-platform">
+                <div class="screen-bot trade">
+                    <div class="where">How will the price of the<br> euro change in 8 seconds?</div>
+                    <a href="javascript:;" class="dealbtn dealbtn-up button-up" uid="up">UP</a>
+                    <a href="javascript:;" class="dealbtn dealbtn-down button-down" uid="down">DOWN</a>
                 </div>
-
-                <div class="item">
-                  <img src="Events/newmenu.jpg" alt="New York">
-                  <div class="carousel-caption">
-                    <h3 style="color:yellow;"></h3>
-                  </div>
+                <div class="trade-time hide">
+                    <div class="text-deal">Get your profit!<br/> <img class="spinn" src="https://static.olymptrade.com/lands/LPL09-03-01en/images/clock.png"> <span class="time"></span></div>
+                    <img class="arrw" src="https://static.olymptrade.com/lands/LPL09-03-01en/images/arrow.png">
                 </div>
-              </div>
-
-              <!-- Left and right controls 
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Назад</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Вперед</span>
-              </a>
-             </div> -->
-
-  </div>
-</div>
-  <div class="bonuses" id="Bonus"> 
-   <h2>Плюшки в Бардаку</h2>
-   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-       <a href="#" class="thumbnail">
-        <img src="Afisha/viski.jpg" style="width: 100%;" alt="Бардак Афіші">
-       </a>        
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-       <a href="#" class="thumbnail">
-         <img src="Events/instaac.jpg" style="width:100%;" alt="Бардак Афіші">
-       </a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-       <a href="#" class="thumbnail">
-         <img src="Afisha/pl3.jpg" style="width:100%;" alt="Бардак Афіші">
-       </a>
-      </div>
+                <div class="graph">
+                    <div id="graph1_placeholder" class="graph-placeholder loading" uid="graph1">
+                        <div class="include">
+                            <div class="graph-state">
+                                <div class="graph-label clear">
+                                    <div class="pulsar"></div>
+                                    <div class="item online">Online</div>
+                                    <div class="item pair">EURUSD</div>
+                                    <div class="item time">13.11.2014 16:29:56</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart" style="width:547px; margin:41px 0 0 97px;"></div>
+                    </div>
+                    <div class="anim-preloader">
+                        <div class="gwrap"><span class="sprite icon-loader"></span></div>
+                    </div>
+                </div>
+            </div>
+            <!--/screen-top-->
+        </div><!--/screen-->
+        <div class="sub-title">Register now and <span class="orange">get 10.000 virtual funds</span> in case of right forecast</div>
+    </div><!--/container-->
+    <a href="#stats" class="scroll"></a>
+</section><!--/how-->
+<section class="stats" id="stats">
+    <div class="container">
+        <ul class="numbers">
+            <li class="clearfix">
+                <div class="orange-number">1$</div>
+                <div class="desc">Minimum<br>investment</div>
+            </li>
+            <li class="clearfix">
+                <div class="orange-number">92%</div>
+                <div class="desc">High<br>profitability</div>
+            </li>
+            <li class="clearfix">
+                <div class="orange-number">1 min</div>
+                <div class="desc">Fast<br>trades</div>
+            </li>
+            <li class="clearfix">
+                <div class="orange-number">10$</div>
+                <div class="desc">Minimum<br>deposit</div>
+            </li>
+            <li class="clearfix">
+                <div class="orange-number">10$</div>
+                <div class="desc">Minimum<br>withdrawal</div>
+            </li>
+            <li class="clearfix">
+                <div class="orange-number">120%</div>
+                <div class="desc">Refunds</div>
+            </li>
+        </ul><!--/numbers-->
+        <div class="choose">
+            <div class="title">Choose your account type:</div>
+            <a href="#reg-form" rel="leanModal" class="orange-button reg-button">Free demo account with 10.000
+                <span class="olymp-sign">a</span></a>
+            <span style="display:inline-block; width:20px;"></span>
+            <a href="#reg-form" rel="leanModal" class="green-button reg-button">Trade on real account</a>
+        </div>
+    </div><!--/container-->
+</section><!--/stats-->
+<section class="feedback">
+    <div class="container">
+        <div class="title">SUCCESS STORIES OF OUR CLIENTS</div>
+        <ul class="feeds">
+            <li class="left clearfix">
+                <div class="photo">
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/content/feed-01.png" alt="">
+                </div><!--/photo-->
+                <div class="text">
+                    Tatiana Gaevskaya, Norilsk
+                    <p>The main advantage of this way to make money is minimum time required. I’m at university now, the attendance is strictly
+                       monitored, so I cannot lose focus
+                       from study for a long time. I’m trading on signals and everything is smooth sailing now! The income is quite good: I shouldn’t
+                       stretch finances or count on
+                       parents. Before I was too emotional and screwed everything up several times. I’m much better now – gained experience and
+                       signals helps me a lot.</p>
+                </div><!--/text-->
+            </li>
+            <li class="right clearfix">
+                <div class="photo">
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/content/feed-02.png" alt="">
+                </div><!--/photo-->
+                <div class="text">
+                    George Trufanov, 23 years, Saint-Petersburg
+                    <p>The priorities may vary depending on a trader, but trust and honesty of a broker are very important for me. I’ve been working
+                       with Olymp Trade since 2014.
+                       Firstly, my strategy didn’t work at all, I lost some money several times. But I’m not tend to get the jitters, so I’ve managed
+                       to earn pretty well recently.
+                       The broker has never had problems with withdrawals. Support just approved my identity and withdraw 105.900 rubles (1606 USD)
+                       without any issues. Thanks,
+                       Olymp Trade! I’ll trade with you for a long time! Wish you success!</p>
+                </div><!--/text-->
+            </li>
+            <li class="left clearfix">
+                <div class="photo">
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/content/feed-03.png" alt="">
+                </div><!--/photo-->
+                <div class="text">
+                    Dmitry Korolev, 27 years, Ekaterinburg
+                    <p>So, my trial day shows that even a beginner could study everything out. I’ve finished Academy course and tested it on
+                       demo-account. When I got it, I used
+                       bonus for Academy and added some real money. So I didn’t worry when started trading, due to trainings. If you’ve decided to
+                       try, my advice is to use demo
+                       first. You’ll be more efficient in real trading. And no mistakes because of emotions.</p>
+                </div><!--/text-->
+            </li>
+            <li class="right clearfix">
+                <div class="photo">
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/content/feed-04.png" alt="">
+                </div><!--/photo-->
+                <div class="text">
+                    Oleg Rodnyakovsky, 31 year, Saint-Petersburg
+                    <p>Finally, I found a convenient company! I truly love the feature of fast withdrawal. Nothing compares to money coming to your
+                       credit card! I rely on my own
+                       trading strategy and feel calm about it. I can earn my month salary just opening 5-6 successful trades. I was trading on forex
+                       previously, but when I tried
+                       options, as this instrument is much more convenient and less time-consuming. I recommend it to all forex-traders, if
+                       they are tired from long-term
+                       trading.</p>
+                </div><!--/text-->
+            </li>
+        </ul><!--/feeds-->
+        <div class="sub">
+            <a href="#reg-form" class="join" rel="leanModal">JOIN NOW</a>
+        </div>
+    </div><!--/container-->
+</section><!--/feedback-->
+<section class="cash">
+    <div class="container">
+        <div class="title">EASY AND RELIABLE WITHDRAWAL</div>
+        <div class="sub-title">Withdraw you profits via any convenient method <span class="orange">within 1 working days</span></div>
+        <ul class="ways">
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/visa.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/mastercard.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/common/icons/payment-services/yandex-money__en--colored.svg" height="40" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/webmoney.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/qiwi.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/neteller.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/systems/skrill.png" alt=""></li>
+            <li><img src="https://static.olymptrade.com/lands/common/icons/payment-services/bitcoin--colored.svg" alt="" height="40"></li>
+        </ul><!--/ways-->
+    </div><!--/container-->
+</section><!--/cash-->
+<footer>
+    <div class="container">
+        <div class="certs">
+            <ul>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/footer-cert-01.png" alt="" class="icon">
+                    <div class="desc">Regulated by FinaCom PLC<br>Certified</div>
+                </li>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/footer-cert-03.png" alt="" class="icon">
+                    <div class="desc">Deposits are kept<br>in the European bank</div>
+                </li>
+                <li>
+                    <img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/footer-cert-04.png" alt="" class="icon">
+                    <div class="desc">SSL certified<br>256 bit Secure Processing</div>
+                </li>
+            </ul>
+        </div><!--/certs-->
+        <div class="links clearfix">
+            <div class="download">
+                <a href="#" class="logo"><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/footer-logo.png" alt=""></a>
+                <a href="http://app.appsflyer.com/com.ticno.olymptrade" class="android"><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/android.png" alt=""></a>
+                <a href="http://app.appsflyer.com/id1053416106" class="ios"><img src="https://static.olymptrade.com/lands/LPL09-03-01en/images/assets/ios.png" alt=""></a>
+            </div><!--/download-->
+            <div class="socials">
+                <ul>
+                    <li class="label">Мы в соц. сетях:</li>
+                    <li><a href="#" class="vk"></a></li>
+                    <li><a href="#" class="fb"></a></li>
+                    <li><a href="#" class="od"></a></li>
+                    <li><a href="#" class="mail"></a></li>
+                    <li><a href="#" class="google"></a></li>
+                </ul>
+            </div><!--/socials-->
+        </div><!--/links-->
+        <div class="copy">
+            <p>General risk warning: trading on the Olymp Trade platform involves high-risk investment.
+                Do not invest funds that you are not prepared to lose. Before you start, we advise that you become
+                familiar with the rules and conditions of trading outlined on our site. Any examples, tips, strategies
+                and instructions on the site do not constitute trading recommendations and are not legally binding.
+                Olymp Trade is a trading platform which operates online. Traders make their decisions independently and
+                this company does not assume responsibility for them. The service contract is concluded in the territory
+                of the sovereign state of Saint Vincent and the Grenadines. The services of the company are provided
+                in the territory of the sovereign state of Saint Vincent and the Grenadines. The site located at the
+                olymptrade.com domain is owned and managed by Smartex International Ltd., registration No. 1631 CTD 2017,
+                address of registration: Suite 305, Griffith Corporate Centre, P.O. box 1510, Beachmont, Kingstown, St.
+                Vincent and the Grenadines,  IBAN CY32902000010000020101000026, Bank: CardPay Ltd, SWIFT CARDCY2L.</p>
+        </div><!--/copy-->
+    </div><!--/container-->
+</footer><!--/footer-->
+    <div id="terms-popup" style="display: none;">
+        <div class="block-content">
+            <h2>Service Agreement</h2>
+            <div class="effective-date">
+                Effective Date <br> 01.02.2017
+            </div>
+            <h3 id="legal_information_service_agreement_contents_1">1. General Provisions and Subject of the Agreement</h3>
+            <p>1.1. This Service Agreement has been made between SMARTEX INTERNATIONAL LTD., registered at 103 Sham Peng Tong Plaza, Victoria, Mahe, Seychelles, registration number 144540 (hereinafter – Company), and the individual who filled in the registration form on the Company's website or in the trading platform and accepted the terms of this Service Agreement and of the appendices hereto at the moment of registration (hereinafter – Client). The Payment Agent(s) that the Company hires to carry out non-trading transactions under this Agreement is also a Party (Parties) to this Agreement. The Company, Payment Agent(s) and Client are jointly referred to as "Parties."</p>
+            <p>1.2. The following documents are an integral part of this Service Agreement (annexes to this Service Agreement):<br>
+                a. Regulation on trading transactions;<br>
+                b. Regulation on non-trading transactions and the KYC/AML policy;<br>
+                c. Risk disclosure;<br>
+                d. Other documents posted in the Legal Information section on the Company’s website or on the trading terminal. <br>
+                The Company may unilaterally alter the list, name, and content of annexes to this Agreement. The Company may add new annexes to the Agreement or delete existing ones without making any amendments to this clause. <br>
+                The text of the Service Agreement and of the annexes to it is referred to as the Agreement.</p>
+            <p>1.3.	The Agreement is an offer posted on the Company’s website that must be treated as an offer to enter into this Agreement on the terms set forth in it. The posted offer is not public. The Company at its sole discretion may refuse to enter into an Agreement with anyone without explaining the reasons for refusal or, if registration took place, to terminate contractual relations and to block access to the trading terminal. The Client's registration on the Company's Website or on the trading terminal is considered to be unconditional acceptance of the terms hereof.  As soon as the Company receives a payment to replenish the Client's trading account, each Client transaction using the trading terminal or Dashboard becomes the subject of this Agreement.</p>
+            <p>1.4.	The Client must carefully review the terms of the Agreement. By accepting the terms of this Agreement, the Client agrees to the terms of all its annexes listed above, confirms that he or she is of legal age, legally competent, and not resident of a state where trading in options may be deemed illegal.<br>
+                The Client also represents and warrants to the Company that:<br>
+                1.4.1. All information provided during Client registration and during the performance of Agreement, is true, accurate, reliable and complete in all respects, and the Client completed the registration form him/herself;<br>
+                1.4.2. The Client has the powers necessary to enter into the Agreement, to submit requests and give orders, and to fulfill his/her obligations pursuant to the terms of the Agreement;<br>
+                1.4.3. The Client will personally carry out all trade and non-trade transactions on his/her own behalf and at his/her own expense and will not use borrowed funds received from other Company clients or from third parties to carry out transactions. The Client will perform trading and non-trading transactions on his/her own behalf and at his/her own expense, acting reasonably and in good faith; the Client will not take actions coordinated with other Company clients that are aimed at harming the Company; the Client will not take advantage of technical features of the quote feed update on the trading terminal and will not take advantage of software bugs and vulnerabilities on the trading terminal that he or she discovers to extract income; the Client will not use unscrupulous and dishonest methods and techniques when carrying out trades (transactions) with the Company; the Client will not use insider, confidential or any other type of information to derive benefits when trading with the Company and/or to harm the Company;<br>
+                1.4.4. The client will adhere to legal norms, in particular international norms aimed at controlling illegal trade, financial fraud, and money laundering;<br>
+                1.4.5. The Client will not use the trading terminal or website to collude in illegal financial activities or any other illegal transaction;<br>
+                1.4.6. the money listed by the Client on the Company's account has legal origin. The Client legally possesses the money and has the right to use it. The Client's account will not be replenished from third party bank accounts or electronic wallets. The Client will not replenish third party client accounts or withdraw money from the Client's account to third party bank accounts or electronic wallets.<br>
+                1.4.7. no actions of the Client pursuant to the Agreement will violate any law, regulation, right, bylaws, or rules and regulations applicable to the Client or in the jurisdiction where he/she resides or the provisions of any other agreement binding on the Client or involving any assets of the Client<br>
+                1.4.8. In carrying out transactions, the Client will use devices he/she owns and connect to the trading platform using communications channels and equipment belonging and registered to the Client (including telephone numbers, ip addresses, etc.). The Client will not use third-party devices, anonymizers or other third party devices and equipment or devices and equipment that make it possible to conceal the Client's real ip address, its true location and the point of connection to the trading platform;<br>
+                1.4.9. The Client is not a federal or municipal civil servant, an employee of a national or municipal institution, an employee of a national or municipal organization, an organization in which the state own a majority stake. The Client is not a politically exposed person or a family member or relative of a politically exposed person. The Client is not a person closely linked to a politically exposed person. The Client is not a person linked to the United States or other state in which the Company does not operate. The Company construes and uses the terms used in this clause independently at its discretion pursuant to the norms of international law and/or the laws of a particular country, generally accepted terms and definitions, and ordinary business customs..</p>
+            <p>1.5. The subject of the Agreement is the definition of the general conditions under which the Parties carry out transactions (trades), the content and procedure for which are set forth in this Agreement. The Company sets and may alter at its sole discretion an essential condition for a transaction (trade), may limit the number of trades executed simultaneously, and limit the number of trades that a Client may make within the time period set by the Company.</p>
+            <h3 id="legal_information_service_agreement_contents_2">2. Terms and Definitions</h3>
+            <p>2.1.	Asset – the underlying financial instrument of a option. An asset may be company stock, a stock index, currency pair (the rate of a exchange of one currency into another currency), goods quoted on a commodity exchange, commodity options, etc.</p>
+            <p>2.2.	Client's Account Balance – the amount of money in the Client's account.</p>
+            <p>2.3.	Option – a derivative financial instrument (trade) consisting of two transactions: executing a trade and closing a trade, as a result of which the Client either receives income or loses the Trade amount. However, the Company does not give the Client the ability to assume obligations in excess of the Trade Amount (the Company will not provide the Client with leverage). The Company makes option trades (Up/Down option) with the Client, the target level of which is equal to the asset rate at the moment the trade is made. A payout is made if the direction rate change direction Up is selected and, when the option expires, the asset rate is higher than the target level, or if the rate change direction Down is selected, when the option expires the asset rate is lower than the target level.</p>
+            <p>2.4.	Bonus – virtual money transferred by the Company to the Client's Account if the Client complies with the conditions set forth by the Company. When the Client makes trades, money transferred by the Client is used first, and only after it is fully spent is the Client entitled to use the Bonus to make further trades. As a general rule, the Client is not entitled to transfer the Bonus amount to the Client's External Account. If the Client transfers money previously transferred to the Client’s Account to the Client’s External Account , the Company may debit all previously accrued Bonuses from the Client’s Account. The Company may a minimum trading volume and other conditions, and if the Client complies with them, the Bonus will not be debited from the Client’s Account and may be withdrawn to the Client’s External Account. The Company may post rules governing the crediting, withdrawal, and use of Bonuses, the conversion of Bonuses into real money, the rules governing the performance of other transactions involving Bonuses and Client funds which govern how a Bonus was awarded to the Client may on the website. In addition to Bonuses, the Company may also offer Clients risk-free transactions and pursue other ways of attracting and retaining customers; when the Client enters into such a risk-free transaction, he or she either receives earnings (if the Client correctly predicted the direction of change in how an asset is trading) or the amount of the transaction is refunded to the Client (if the Client did not correctly predict the direction of change in how an asset is trading).</p>
+            <p>2.5.	Company Website – an internet site at the address (domain name) olymptrade.com, and other internet sites which the Company references in the Agreement or on the Company Website.</p>
+            <p>2.6.	Client External Account – the Client's current account at a lending institution, an account (wallet) on an electronic payment system.</p>
+            <p>2.7.	Option Expiration Time – the time when the condition for payout of income on the option is checked.</p>
+            <p>2.8.	Trading Hours – the time when trading in an asset may be done.</p>
+            <p>2.9.	Funds Withdrawal – transfer of money from the Client’s Account to the Client’s External Account.</p>
+            <p>2.10.	Payout – fixed remuneration credited to the Client's Account if the terms of the option condition are fulfilled. The Income amount is determined at the time that the trade is executed. Income is credited to the Client’s account from the Company’s guaranteed (compensatory, special) fund (reserve fund), which is formed in the manner determined by the Company at its own expense.</p>
+            <p>2.11.	Execution of a trade – a trading transaction in which the essential conditions of a option trade are agreed by the Client and the Company. After it is made, the option trade is open.</p>
+            <p>2.12.	Closure of a trade – a trading transaction in which an open option trade is liquidated. It is performed if the trade conditions are fulfilled when the option expires or on the Client’s initiative. Early trade closure - the closure of a trade at the Client's initiative before it is closed at the option expiration time. A trade is closed at the client's initiative only if it is technically possible for the Company to do so and this action is a right, but not a duty of the Company. </p>
+            <p>2.13.	Exceptional Situations - abnormal market conditions described in the Regulation on Trading Transactions.</p>
+            <p>2.14.	Payout ratio – the percentage that determines the Income amount set by the Company depending on the option asset and other conditions of the option.</p>
+            <p>2.15.	Asset Quote – the price for one unit of the Asset.</p>
+            <p>2.16.	Log Entry – a record in the database made by the Company Server that, with an accuracy to the second, logs all Client requests and orders as well as the result of their processing. Each Client contact with the trading terminal and Dashboard is recorded in Log Entries. These server data are the main source of information and are recognized by the Parties as evidence in case of disputes related to fulfillment of the Agreement. Information from a Log Entry of the Company Server prevails over other arguments in a review of a dispute, in particular over information from the Log File of the Client's trading terminal. The Company reserves the right not to maintain Log Entries.</p>
+            <p>2.17.	Price Direction – an essential condition of a option trade that determine the trade payout. A price may change direction Up or Down.</p>
+            <p>2.18.	Non-trading Transaction – any Client transaction to deposit funds on the Client's Account or withdraw funds from the Client's Account.</p>
+            <p>2.19.	Transactions – The Client's trading and non-trading transactions.</p>
+            <p>2.20.	Open Trade – a option trade after the execution of the trade and before trade closure, for which it is not determined yet whether a payout will be made.</p>
+            <p>2.21.	Payment Agent – a third party used by the Company to transfer money to and/or from the Client’s Account. The Company's Payment Agent is WALLFORT LIMITED, which is registered at the following address: Kypranoros, 13, Evi Building, 2nd floor, office 201, 1061, Nicosia, Cyprus under registration number HE 364695. Its office and correspondence address is: 42E Arch. Makariou III Avenue, Matina Building, 3rd Floor, Office 301 B, 1065 Nicosia, Cyprus. The Company is responsible for the actions of the Payment Agent as though they were its own actions. Claims/complaints/statements may be submitted to the Payment Agent at the addresses specified in this clause in accordance with the procedure prescribed by Section 5 of this Agreement.</p>
+            <p>2.22.	Price Feed – a succession of prices displayed on the Trading Terminal.</p>
+            <p>2.23.	Black Territory – the state of an open option trade if income on the trade can be paid out on the basis of the current trade asset price.</p>
+            <p>2.24.	Payment service provider - a company that provides funds transfer services.</p>
+            <p>2.25.	Recurring payment – a periodically repeating transaction to replenish the Balance of the Client's account without requiring the latter to reenter his or her credit card information. After the Client replenishes the Balance of his or her account the first time, the Client is presented with the option of avoiding having to reenter his or her credit card information again in the future. The Client needs only to confirm each operation to replenishment the Balance of his or her account.</p>
+            <p>2.26.	Trade – an agreement between the Client and the Company under which the Client pays the Trade Amount and the Company agrees to pay a fixed Income if the option conditions selected by the Client are fulfilled.</p>
+            <p>2.27.	Company Server – the Company's software used to process and store information about client requests for trading and non-trading transactions, to provide to the Client real-time information about trading on financial markets, to account for trading and non-trading transactions, to monitor the fulfillment of trade conditions and limit trading transactions, and to determine the financial result of trades.</p>
+            <p>2.28.	Withdrawal Method – one of the Funds Withdrawal methods offered to the Client that is posted on the trading terminal and in the Dashboard.</p>
+            <p>2.29.	Trade Amount – the amount paid by the Client to the Company when a trade is executed. The Client’s income from a option trade, if the deal condition is met, is directly proportional to the trade amount.</p>
+            <p>2.30.	Company's Account – the Company's settlement account at a financial institution, an account (wallet) in an electronic payment system, and other accounts, including accounts of Payment Agents.</p>
+            <p>2.31.	Essential Conditions of a trading transaction (essential conditions of a trade) – the conditions that govern the payout of income from a trade to the Client by the Company.</p>
+            <p>2.32.	Client’s Account (Trading Account) – a special account in the Company's accounting system where funds transferred by the Client for making option trade are posted, from which the trade amount is debited when a trade is made, and to which income is credited when a trade is closed. A Client may have only one client account. If this rule is violated, the Company may refuse to provide further services to the Client, to terminate this Agreement and to disable further performance of transactions without giving reasons and without paying funds from the Client’s account.</p>
+            <p>2.33.	Trading transactions – procedures for executing and closing option trades between the Company and the Client. Trading transactions are carried out where the Company is registered. There is no physical delivery of assets during trading transactions. Trade amounts on trading transactions are debited from the Client's account balance right after the trade is opened. Income earned on trading transactions is credited the Client's account right after the trade closes.</p>
+            <p>2.34.	Trading Terminal – software through which the Client can obtain real-time information about bidding on financial markets, to perform trading and non-trading transactions and receive messages from the Company. Log in to the trading terminal is protected by a password that the Client sets on his/her own after registration on the Company Website. All orders executed through the trading terminal are deemed placed personally by the Client. A trading terminal may not be used by Clients from countries whose laws prohibit option trading and other off-market derivative financial instruments or by Company employees, affiliates, and agents and their relatives. The part of the trading terminal that a Client can use for non-trading transactions under this agreement may be called the Dashboard.</p>
+            <p>2.35.	Red Territory - the state of an open option trade if, at the current asset price, income cannot be paid out on that trade.</p>
+            <p>2.36.	1-Click service - makes it possible to replenish a Client's account balance from the Client's bank (payment) cards without entering the bank (payment) card data of the bank card holder again.</p>
+            <p>2.37.	Target Level - the asset price level, the attainment or non-attainment of which meets the condition for payout on the trade.</p>
+            <p>2.38.	Cookie file - a small data set including an anonymous unique identifier which is sent to the web browser of the Client's computer or mobile telephone (hereinafter "device") from the Company server (website) and is stored on the hard disk of the Client's computer. The Client may configure a web browser to block cookie access to the computer. When a Client visits the Company Website, the viewed pages and cookie files are downloaded onto the hard drive of the Client's device. Cookie files stored on the hard drive may be used for anonymous identification if the Client revisits the Company's website and to determine the website pages that are the most popular among our Clients. However, for confidentiality and security, the Company does not store Client personal data (including name, personal information, email address, etc.). Cookie files stored on the hard drive of the Client's device enable the company to create the most user-friendly and efficient website for Company Clients, providing us an opportunity to identify our Clients' preferences.</p>
+            <p>The terms used in this Agreement that are not defined in this section are to be construed according to generally accepted business customs and practices applicable to the trading of derivative financial instruments.</p>
+            <h3 id="legal_information_service_agreement_contents_3">3. Communications and Provision of Information</h3>
+            <p>3.1. To communicate with the Client, the Company may use:<br>
+                —&nbsp;e-mail;<br>
+                —&nbsp;fax;<br>
+                —&nbsp;telephone;<br>
+                —&nbsp;SMS;<br>
+                —&nbsp;letters sent by post;<br>
+                —&nbsp;different types of messages sent to the Client on the trading terminal, in the Dashboard, browser window, etc. (push notifications, reminders, service messages, etc.)  (<nobr>push-notices</nobr>, reminders, service messages <nobr>etc. п.</nobr>);<br>
+                —&nbsp;announcements on&nbsp;<nobr>the Company</nobr> website.</p>
+            <p>3.2. To promptly communicate with the Client to resolve problems related to Client transactions, the Company will use the Client's contact information entered when the Client registered or modified the account&nbsp;pursuant to clause 4.4 of the Agreement. The Client agrees to accept message from the&nbsp;Company at&nbsp;any time.</p>
+            <p>3.3. Any correspondence (documents, notices, confirmations, announcements, reports&nbsp;etc.) are deemed received by the Client:<br>
+                1) one (1) hour after&nbsp;they are&nbsp;sent to the&nbsp;email address (<nobr>e-mail</nobr>);<br>
+                2) immediately after they&nbsp;are&nbsp;faxed;<br>
+                3) immediately after the telephone call ends;<br>
+                4) immediately after <nobr>an SMS message is sent</nobr>;<br>
+                5) seven(7) calendar days after&nbsp;they are mailed;<br>
+                6) immediately after an announcement is posted on&nbsp;the Company website.</p>
+            <p>3.4. The Client may also contact the Company by e-mail a <a href="mailto:help@olymptrade.com">help@olymptrade.com</a>, а&nbsp;and other email addresses and the&nbsp;telephone numbers listed in&nbsp;this Agreement and&nbsp;on&nbsp;<nobr>the Company</nobr> website.</p>
+            <p>3.5. The Client understands and agrees that, if the Client's behavior during conversations with a Company employee is inappropriate, the Company reserves the right to unilaterally terminate this Agreement.</p>
+            <p>3.6. The Company may use contact information provided by the Client to send informational, marketing, and advertising materials, and service messages and to resolve other tasks. The Company will determine the frequency with which it sends messages to the Client at its sole discretion. If the Client wishes not to receive from informational (and other) messages from the Company, he/she must unsubscribe by clicking on the Unsubscribe link (if the message format provides this ability) or by contacting the client support department.</p>
+            <h3 id="legal_information_service_agreement_contents_4">4. How to use company services.</h3>
+            <p>4.1. During registration the Client undertakes to provide correct and reliable identification information in accordance with requirements of the Client registration form.</p>
+            <p>4.2. After successful registration, the Client will be granted access to the trading terminal, the ability to transfer funds to the Client’s Account (placing a deposit in the Client’s Account to be able to make option trades) and to perform other operations.</p>
+            <p>4.3. The Client must promptly inform the Company of any changes to his/her identification and contact information (within seven (7) days after such change) by making the respective changes on the trading terminal or in any another way suggested by the Company. To identify the Client, the Company is entitled to request any Client’s identification document (including Client’s identity documents and proof of residence; documents proving the Client's financial standing, and any other documents at the Company’s discretion). The Company reserves the right to suspend trading and/or non-trading transactions in the Client’s Account if it is discovered that the Client’s identification information is incorrect or questionable or if the Client fails to provide the requested documents. The Company has the right to block the Client's access to the trading terminal until the completion of the Client identification procedure. The Company may also require that the Client be identified by paying a visit to an authorized Company-agent to provide the documents defined by the Company at its discretion.</p>
+            <p>4.4. Login to the trading terminal is password protected.<br>
+                4.4.1. The Client confirms and agrees that access to the trading terminal will be protected with a password set by the Client himself/herself during registration. The Client may not transfer the trading terminal password to third parties. 4.4.2. The Client assumes full responsibility for password protection and prevention of unauthorized third party access to it.<br>
+                4.4.3. All orders through the trading terminal with the Client's password will be deemed to have been made by the Client unless the Company establishes otherwise.<br>
+                4.4.4. Any person who obtains access to the trading terminal by entering the Client's password will be identified as the Client unless otherwise specified by the Company.<br>
+                4.4.5. The Company assumes no liability for any losses the Client may suffer in case of theft, loss or disclosure of the password to third parties or in case of unauthorized use of registration data by third parties.</p>
+            <p>4.5. The Client may change the password to the trading terminal himself/herself or use the procedure for password recovery set by the Company.</p>
+            <h3 id="legal_information_service_agreement_contents_5">5. Claims and Dispute Resolution</h3>
+            <p>5.1. The Parties have agreed that they will make every effort to settle all disputes between the Company and the Client related to transactions, payouts and other actions hereunder by means of negotiations.</p>
+            <p>5.2.	If a dispute arises, the Client may submit a claim/complaint to the Company and send a statement or notice to the Company. All claims/complaints/statements/notices related to transactions performed by the Client must be submitted in accordance with the following requirements:
+                5.2.1.	claims/complaints/statements/notices must be submitted in writing;<br>
+                5.2.2.	claims/complaints/statements/notices must contain the following information: Surname, first name, middle name (if any), Client’s e-mail, Client’s Account Number, date and time of the dispute, brief description of the dispute, Client’s demands; claimed amount and justified calculation thereof (if the claim can be valued in money); circumstances that are the grounds for the claim and evidence supporting those circumstances, including reference to the clause of this Agreement (annexes hereto) that were breached in the Client’s opinion; a list of documents and other evidence attached to the claim (complaint) authenticated by the Client; other information necessary to settle the dispute;<br>
+                5.2.3.	claims/complaints/statements/notices must be sent by the Client within five (5) business days after the event that was the basis for submission of the relevant claim (complaint). The Client agrees that a delay in submission of the claim (complaint) is grounds for refusal to consider it;<br>
+                5.2.4.	claims/complaints/statements/notices may be sent by e-mail to <a href="mailto:claim@olymptrade.com">claim@olymptrade.com</a>, by registered or certified mail, or by other means of communication that provide a record that they were sent (including fax) or may be hand delivered with acknowledgment of receipt signed by the recipient.
+                Claims/complaints/statements/notices made and sent in another form will not be considered.
+            </p>
+            <p>5.3. Claims/complaints/statements/notices must not contain:<br>
+                <br>a) an emotional evaluation of the dispute;
+                <br>b) offensive statements addressed to the Company;
+                <br>c) profanity.
+            </p>
+            <p>5.4. To respond to a claim/complaint/statement/notice, the Company may request additional documents and information from the Client. A claim/complaint/statement/notice will be reviewed on the basis of data provided by the Client and log entries from the Company server. Log entries from the Company Server always prevail over other evidence and proof. The Company assumes no liability for incomplete trades and will not compensate any financial damages or moral harm suffered by the Client with respect to what the Client considers to be lost profit. When considering disputes, the Company will not take into account the Client’s references to information from other companies and websites.</p>    <p>5.5. The Company may reject a claim/complaint/statement/notice if the terms of this section are violated. </p>    <p>5.6. The Company will revise a claim/complaint/statement /notice within 5 business days after submission.</p>
+            <p>5.7. If the Client’s claim/complaint/statement/notice has not been settled by the Company by the above dispute settlement procedure, the Client shall may submit a claim to the Financial Commission (www.financialcommission.org).</p>    <p>5.8. In addition to provision set forth in clauses 5.2.-5.7. of the dispute resolution procedure, the Client may file a claim to a court, provided that he/she has first submitted the claim to the Company in accordance with this dispute resolution procedure. The claim procedure for dispute resolution will be deemed followed if: a) the form and content of the claim meet the requirements of clauses 5.2.1., 5.2.2., and 5.2.3.; b) the claim is sent to the Company’s registration address; c) the Client has a confirmation of claim receipt by the Company; d) the deadline for responding to the claim has expired. Claim response time – sixty (60) calendar days after it is received by the Company.</p>
+            <p>5.9.	In case of any disputes, the Company reserves the right to fully or partially block transactions in the Client's Account until the dispute is settled or until the Parties come to an interim agreement.</p>
+            <h3 id="legal_information_service_agreement_contents_6">6. Governing Law</h3>
+            <p>6. Governing Law</p>
+            <p>6.1. This Agreement is concluded in the Republic of the Seychelles Islands (hereinafter country of Company registration) and is governed by the legislation of the country of the Company's registration. The services hereunder are rendered in the country of the Company’s registration.</p>
+            <p>6.2. The Client expressly:<br>
+                a) agrees that the courts of the country of the Company’s registration have exclusive jurisdiction to conduct any legal proceedings with respect to this Agreement;<br>
+                b) submits to the jurisdiction of the courts of the country of the Company’s registration;<br>
+                c) waives any appeals with respect to proceedings in any of such courts;<br>
+                d) agrees to make no claims regarding forum non conveniens and not to declare that the forum state has no legal jurisdiction over the Client.</p>
+            <h3 id="legal_information_service_agreement_contents_7">7. Force Majeure</h3>
+            <p>7.1. If it has reasonable grounds, the Company is entitled to claim the occurrence of force majeure events. The Company must take proper steps to inform the Client about the occurrence of the force majeure events. Force majeure events include (but are not limited to):<br>
+                a) any action, event or phenomenon (including, but not limited to, any strike, mass rioting or civil unrest, terrorist attacks, wars, natural disasters, accidents, fires, floods, storms, blackouts, communication, software or electronic equipment failures, malfunctions in any type of hardware or software, instability in the quote feed, any interruptions or failures in the liquidity provider service, etc.) that, in the reasonable opinion of the Company, resulted in destabilisation of the market or markets for one or several assets (instruments);<br>
+                b) suspension, liquidation or closure of any market or the absence of any event on which the Company basis quotes, or the imposition of limits or special or non-standard trade conditions in any market or with respect to any such event.</p>
+            <p>7.2. If the Company establishes a force majeure event, the Company may (without prejudice to other rights of the Company) take any of the following actions without prior written notice and at any time:<br>
+                a) cancel any or all open trades of the Client;<br>
+                b) suspend or alter the application of one or all provisions of the Agreement during which the force majeure event makes it impossible for the Company to fulfill such provisions;<br>
+                c) perform or, vice versa, not perform any actions with respect to the Company, the Client and other clients if the Company finds it reasonable in these circumstances on sufficient grounds.</p>
+            <p></p><p>7.3 The Company assumes no liability for breach (improper discharge) of obligations if force majeure events interfered with that discharge.</p>
+            <h3 id="legal_information_service_agreement_contents_8">8. Liability of the Parties</h3>
+            <p>8.1. The liability of the Parties hereto is determined by terms of the Agreement and of its annexes.</p>
+            e) damage to the Company as a result of the extraction of income from the use of the technical features of the price feed update on the trading terminal and extraction of income from the use of software errors and vulnerabilities in the trading terminal;<p></p>
+            <p>8.2.	The Company assumes liability only for real damages caused to the Client as a result of the Company's deliberate breach of its obligations hereunder. The Company is as responsible for the actions of its employees, departments, and payment agents as it is for its own actions.</p>
+            <p>8.3.	The Client assumes liability to the Company for damages incurred by the Company through the Client’s fault, including:
+                a) for damages caused as a result of the Client’s failure to provide (or delay in providing) any documents that must be provided to the Company pursuant to this Agreement and the annexes hereto and for damages caused to the Company as a result of any falsification of information contained in the documents provided by the Client,<br>
+                b) for damages caused to the Company by misuse of services provided by the Company to the Client, in particular for damages (losses) caused to the Company by use of robotic and automated trading algorithms and/or special software, devices, methods, and techniques that violate and contribute to violation of the principles of good faith and fairness when making transactions,<br>
+                c) for damages caused by the Client as a result of concerted actions with other clients of the Company and/or persons affiliated with the Client aimed at causing losses to the Company, and for other damages caused to the Company by the Client through the use of other unfair and dishonest methods and ways of making trades (transactions) with the Company, including the use of Bonuses. Regardless of the situation, persons affiliated with the Client are be defined as persons who are relatives of any degree of kinship to the Client; family members, partners or persons who are connected by any type of relationship to the Client; persons residing at the same address as the Client; persons using the same devices as the Client; persons recruited as a Company Client by that Company affiliate or Client; as well as persons engaged in any joint activity whether under the guise of a legal entity or not. The Company reserves the right to expand the list of situations and criteria by which the Client and third parties may be recognized as affiliated,<br>
+                d) if there are sufficient grounds to assume that the Client attempted to illegally use the software provided by the Company and money transferred to the Company’s Account,<br>
+                f) for damage sustained by the Company due to the Client’s use of Company insider, confidential, and any other information that gave the Client any type of advantage in executing trades with the Company.<br>
+                The Company is entitled to debit these losses from the Client’s Account and/or accounts of other persons (provided that technical and other equipment held by the Company has determined that such accounts actually belong to the Client (or the Client’s accomplices)). The Company may also block further transactions of the Client on the trading terminal and Dashboard with respect to which the Company has sufficient grounds and suspicions to qualify the actions (in particular those performed along with other clients) as aimed at causing damage to the Company; to debit money from the Client’s account in favor of the Company.</p>
+            <p>8.4. If the Client breaches this Agreement, the Company may, at its option:<br>
+                8.4.1. Review the amount of the Company’s financial obligations to the Client and make changes to the data (balance) of the Client’s Account.<br>
+                8.4.2. Suspend services to the Client, block access to the trading terminal.<br>
+                Should the Company block the Client’s access to the trading terminal, the Client must take all necessary and reasonable steps to remedy the reasons why access to the trading terminal was blocked. If the Client does not take any measures or actions to address the reasons why access was blocked within 30 (thirty) days, the Company may withdraw all funds from the trading account. The Company must redeposit all funds that were withdrawn into the Client’s trading account if the Client satisfies all the requirements needed to lift the block on the trading account.</p>
+            <p>8.5. If the Client violates the representations and guarantees set forth in clause 1.4., 1.4.1. – 1.4.9. of the Agreement, the Company may cancel the contract, deem any Client trade invalid, close one or all of the Client’s accounts at any time at its sole discretion, stop providing service to the Client, and return all funds deposited by the Client or not at its discretion.</p>
+            <p>8.6. The Company assumes no liability to the Client for any damages, losses, lost profit, lost opportunities (due to possible market fluctuations), expenses or damages incurred by the Client as a result of the execution of trades pursuant to the terms hereof.</p>
+            <p>8.7.	The Company assumes no liability in case of a discrepancy between the information represented on the Client’s trading terminal and the information on the Company Server when the financial result of the Client’s trades is determined. To eliminate such discrepancy, the Company will adjust the data on the trading terminal in accordance with the information available on the Company Server.</p>             <p>8.8.	The Company assumes no liability for the Client’s damages if those damages resulted from hacker attacks, accidents (failures) of computer networks, communication networks, power lines or telecommunication systems, etc., directly used to agree on the essential conditions of the Client’s transactions or ensure other Company operating procedures that occurred through no fault of the Company.</p>
+            <p>8.9.	The Company assumes no liability for technical failures and/or interruptions in trading terminal operation that occurred as a result of hacker attacks, accidents (failures) of computer networks, communication networks, power lines or telecommunication systems, etc., or for the Client’s losses resulting from such failure and/or interruption.</p>
+            <p>8.10. The Company assumes no liability for the results of trades that the Client decided to make on the basis of analytical materials provided by the Company and/or third parties. The Client has been informed that transactions made hereunder bear the risk of not receiving the expected income and the risk of loss of some or all of the money deposited by him/her in the Client’s Account. The Client acknowledges that unless there is fraud, deliberate breach of obligations or gross negligence on the part of the Company, the Company will not be liable for any losses, expenses, costs and damages of the Client resulting from inaccuracy of information provided to the Client, including, but not limited to, information about the Client’s trading transactions. The Company reserves the right to cancel or close any Client trade under the conditions set forth in this Agreement; nevertheless, all transactions made by the Client as a result of this inaccurate information or an error remain in force and must be fulfilled both by the Client and the Company. </p>
+            <p>8.11. The Company assumes no liability for any losses the Client may suffer in case of theft, loss or disclosure of his/her password to the trading terminal to third parties. The client assumes full responsibility for protecting he password and safeguarding it against unauthorized third party access.</p>
+            <p>8.12. The Company assumes no liability for breach (improper discharge) of the obligations hereunder if it was caused by force majeure events.</p>
+            <p>8.13. The Company assumes no liability for any indirect, special, arbitrary, or punitive damages suffered by the Client, including, but not limited to, lost profit, loss of expected savings or loss of income, even if the Client was informed by the Company about the possibility of such damages. Emotional distress will not be indemnified.</p>
+            <h3 id="legal_information_service_agreement_contents_9">9. Term and Termination of the Agreement</h3>
+            <p>9.1. This Agreement comes into force upon its conclusion (client registration on the website or on the Company’s trading terminal) and will be valid in perpetuity.</p>
+            <p>9.2. Either Party may terminate this Agreement unilaterally:
+                <br>9.2.1. The Agreement is considered terminated on the initiative of the Company as of the date specified in the notice sent by the Company to the Client;
+                <br>9.2.2. The Agreement is considered terminated at the initiative of the Client five (5) business days after the Company receives of the Client’s written notice containing the statement of termination of the Agreement, provided the Client has no unfulfilled obligations hereunder. The Client must send the Termination Notification to the Company's address provided in clause 1.1. of this Agreement, or to the email address <a href="mailto:help@olymptrade.com">help@olymptrade.com</a>.</p>
+            <p>9.3. This Agreement is considered terminated with respect to the Parties when the mutual obligations of the Client and of the Company with respect to previously made transactions are fulfilled and all debts of each Party are repaid.9.1. This Agreement comes into force upon its conclusion (client registration on the website or on the Company’s trading terminal) and will be valid in perpetuity.</p>
+            <p>9.2. Either Party may terminate this Agreement unilaterally:
+                <br>9.2.1. The Agreement is considered terminated on the initiative of the Company as of the date specified in the notice sent by the Company to the Client;
+                <br>9.2.2. The Agreement is considered terminated at the initiative of the Client five (5) business days after the Company receives of the Client’s written notice containing the statement of termination of the Agreement, provided the Client has no unfulfilled obligations hereunder. The Client must send the Termination Notification to the Company's address provided in clause 1.1. Clause of this Agreement, or to the email address <a href="mailto:help@olymptrade.com">help@olymptrade.com</a>.</p>
+            <p>9.3. This Agreement is considered terminated with respect to the Parties when the mutual obligations of the Client and of the Company with respect to previously made transactions are fulfilled and all debts of each Party are repaid.</p>
+            <h3 id="legal_information_service_agreement_contents_10">10. Final Provisions</h3>
+            <p>10.1. Amendments and supplements to this Agreement and to its annexes hereto will be made by the Company unilaterally. All amendments and supplements made by the Company and not related to the circumstances specified herein come into force on the date specified by the Company.</p>
+            <p>10.2. Amendments and supplements made by the Company to this Agreement and to its annexes because of amendments to legislation and regulations governing the subject hereof and to rules and contracts of trading systems used by the Company to discharge its obligations hereunder come into force simultaneously with amendments in the aforementioned documents.</p>
+            <p>10.3. When the amendments and supplements made by the Company come into force, they will apply equally to all Clients, including those who concluded the Agreement before their effective date.</p>
+            <p>10.4. To ensure that a Client who entered into the Agreement is aware of amendments and supplements before they come into force, the Client must visit the Company's Website or the trading platform him/herself or through authorized persons at least once a week to find information about any amendments and/or supplements.</p>
+            <p>10.5. The Client (individual) providing his/her personal data to the Company in any form and in any way (when performing any actions on the Company’s website, through the Company’s counterparties, etc.) thereby gives the Company and its partners his/her consent for automated and non-automated processing of his/her personal data for the purpose of the fulfillment of this Agreement, the implementation of advertising campaigns, provision to him/her of advertising, informational, and marketing materials, information about campaigns and events held by the Company, and for other purposes determined by the Company, namely: to collect, record, systematize, accumulate, store, adjust (update, amend), extract, transfer (disseminate, grant access), depersonalize, block, delete, destroy and transfer across borders personal data. Consent is given for a period of 75 years (or until expiry of the retention periods for the relevant information or documents containing that information determined in accordance with the current legislation of the Company's location). Consent may be withdrawn in accordance with legislation by sending a statement to the Company’s location. Contact information is posted on the Company’s Website.The Company guarantees the confidentiality of the personal data provided by the Client, excluding the circumstances set by the applicable law and force majeure.</p>
+            <p>10.6. The Client may use information that was communicated to the Client either orally or in writing that is posted by the Company or by third parties, access to which was granted to him/her as part of the services hereunder only for transactions under this Agreement. The Client may not disseminate, alter, or supplement the aforementioned information, or store it in separate archives. In any event, the scope of powers granted to the Client with respect to information posted by third parties cannot exceed the scope of powers obtained by the Company from the third party. The Company does not guarantee that information posted by third parties is reliable, accurate, or relevant and will be provided on an ongoing basis without interruptions. Nor is the Company liable for the results of transactions (losses, lost profit, lost income, injury to goodwill, etc.) that the Client decided to perform on the basis of information that was communicated to the Client either orally or in writing by the Company or by third parties./p&gt;
+            </p><p>10.7. The Company may fully or partially transfer the rights and obligations under this Agreement and the annexes hereto to a third party if such person undertakes to fulfill the terms hereof. This transfer of rights and obligations will come into force 10 business days after the day when the Client is deemed to have received the relevant notice pursuant to the provisions of this Agreement.</p>
+            <p>10.8. The Client is not entitled to assign his/her own rights, impose his/her own obligations or transfer rights or obligations hereunder in any other way without prior written consent of the Company. If this condition is breached, any such assignment, imposition or transfer will be deemed null and void.</p>
+            <p>10.9. The Company, its partners or any other affiliates may have a material benefit, legal relation or arrangement with respect to a transaction on the trading platform or in the Dashboard or a material benefit, legal relation or arrangement that is in conflict with the Client’s interests. For example, the Company may:<br>
+                a) act as a counterparty with respect to any asset;<br>
+                b) suggest another partner of the Company as a counterparty for a trading operation;<br>
+                c) give recommendations and render services to its partners or other clients of the Company with respect to assets they are interested in, despite the fact that this is in conflict with the Client’s interests.</p>
+            <p>10.10. The Client agrees and authorizes the Company to act with respect to the Client and for the Client as the Company finds appropriate, despite a potential conflict of interests or the existence of some material interest with respect to any transaction on the trading terminal or in the Dashboard without prior notification of the Client. The existence of a conflict of interest or material benefit with respect to any transaction on the trading terminal or in the Dashboard must not affect the provision of services to the Client by Company employees. From time to time the Company may act on behalf of the Client with parties with whom the Company or any of its related parties have an agreement to receive goods or services. The Company guarantees that these agreements are made as far as possible for the benefit of the Client, for example, these agreements make it possible to access information and other services that would otherwise be inaccessible</p>
+            <p>10.11. If a court of proper jurisdiction declares any provision of the Agreement (or any part of any provision) void, that provision will be treated as a separate part of the Agreement and this will not affect the legal force of the rest of the Agreement./p&gt;
+            </p><p>10.12. The Company may suspend services to the Client at any time (prior notice to the Client is not required).</p>
+            <p>10.13. In situations not described in the Agreement, the Company will act according to market best practices based on principles of honesty and fairness. </p>
+            <p>10.14. The Company may prepare and use texts of the Agreement and its annexes in languages other than English. If there are contradictions between the text of this Agreement and its annexes in English and the corresponding texts in other languages, the text in English will prevail. The text of the Agreement published on the Company website prevails over the text of the Agreement published elsewhere.</p>
+            <h3 id="legal_information_service_agreement_contents_11">11. List of Countries in which the Company Does Not Do Business</h3>
+            <p>11.1. The Company does not do business in the following countries and does not provide services to persons associated with those states: Australia, Canada, the United States, Japan, Austria, Belgium, Bulgaria, Croatia, Cyprus, Lichtenstein, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Iceland, Italy, Israel, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, New Zealand, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Switzerland, Sweden, and United Kingdom;</p>
+            <p>
+                11.2. Persons associated with a country are defined as persons:<br>
+                11.2.1. having citizenship, a residence visa, or other similar document from a country in which the Company does not do business;<br>
+                11.2.2. residing in a country in which the Company does not do business, being a resident of a country in which the Company does not do business, or having mailing addresses or residence addresses in a country in which the Company does not do business;<br>
+                11.2.3. whose places of birth are countries in which the Company does not do business;<br>
+                11.2.4. having a telephone number with the country code of a country in which the Company does not do business; having an ip address associated with a country in which the Company does not do business;<br>
+                11.2.5. having another connection with a country in which the Company does not do business as defined by the Company at its discretion.
+            </p>
+            <p>11.3. If it is found that the Company is providing services to persons associated with the countries in which the Company does not do business, the Company may apply the consequences listed in clause 8.5 of the Agreement or take other steps pursuant to the Agreement.</p>
+        </div>
     </div>
-     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-       <a href="#" class="thumbnail">
-        <img src="Afisha/iq.jpg" style="width:100%;" alt="Бардак Афіші">
-       </a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-       <a href="#" class="thumbnail">
-         <img src="Afisha/dr.jpg" style="width:100%;" alt="Бардак Афіші">
-       </a>
-      </div>
-     </div>      
-    </div>
-   </div>
+<script src="https://static.olymptrade.com/lands/common/scripts/translation.js"></script>
+<script src="https://static.olymptrade.com/lands/common/scripts/registration.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://static.olymptrade.com/lands/LPL09-03-01en/js/libs/jquery.leanModal.min.js"></script>
+    <script type="text/javascript" src="https://static.olymptrade.com/lands/common/plugins/fancybox/fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://static.olymptrade.com/lands/common/plugins/fancybox/css/fancybox.css">
+<script src="https://static.olymptrade.com/lands/LPL09-03-01en/js/GA.js"></script>
+<script src="https://static.olymptrade.com/lands/LPL09-03-01en/js/main.js"></script>
+<script data-main="https://static.olymptrade.com/lands/landing_game/landing_game_resources/main" src="https://static.olymptrade.com/lands/landing_game/landing_game_resources/scripts/require.js"></script>
+<!-- Facebook Pixel Code -->
+<script>
+    function facebookPixel() {
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq)return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+            ;
+            if (!f._fbq)f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+                document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '420471434966487'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+        $('body').append('<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=420471434966487&ev=PageView&noscript=1"/></noscript>')
+    }
 
-  <div class="stuff" id="Team">
-   <div class="container">
-    <h2>Команда Бардак</h2>
-    <div class="row">
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/bodya.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Бармен Богдан</h3>
-       </div>     
-      </div>
-     </div>
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/barmen2.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Бармен Гоша</h3>
-       </div>     
-      </div>
-     </div>
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/fiz.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Офіціант Вася</h3>
-       </div>     
-      </div>
-     </div> 
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/fiz2.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Офіціант Катя</h3>
-       </div>     
-      </div>
-     </div>
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/fiz3.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Офіціант Юля</h3>
-       </div>     
-      </div>
-     </div> 
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/fotograph.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Фотограф Віталій Музика</h3>
-       </div>     
-      </div>
-     </div>  
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/tamada.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption">
-        <h3 style="text-align: center;">Ведучий Тім</h3>
-       </div>     
-      </div>
-     </div>  
-
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="thumbnail">
-       <img src="Stuff/admin.jpg" style="width:100%;" class="img-reponsive" alt="Бардак стаф">
-       <div class="caption" style="text-overflow: ellipsis;">
-        <h3 style="text-align: center;">Адміністратор Ксюша</h3>
-       </div>     
-      </div>
-     </div>
-
-     
-    </div>
-   </div>
-  </div>
-
-  <!--<div class="smachno">
-   <h2>Смачно в Бардаку</h2>
-   <div class="container">
-     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="media" style="margin-top:15px;">
-          <div class="media-left">
-            <a href="#">
-             <img class="media-object foodimages" src="food/bread.jpg" alt="Смачно в Бардаку">
-            </a>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">ФСБ</h3>
-            <p>Оновлені ФСБ (Фірмові Сухарики Бардак) з сирно-часниковим соусом - новий улюблений снек під пивас - варто спробувати, особливо коли рекомендує </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="media" style="margin-top:15px;">
-          <div class="media-left">
-            <a href="#">
-             <img class="media-object foodimages" src="food/burger.jpg" alt="Смачно в Бардаку">
-            </a>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Пізанський бургер</h3>
-            <p>Відрекомендуємо Пізанський трьохповерховий міні-бургер зі шматочками приправленої свинини)
-            шукайте його також з різнокольоровими булками)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="media" style="margin-top:15px;">
-          <div class="media-left">
-            <a href="#">
-             <img class="media-object foodimages" src="food/american.jpg" alt="Смачно в Бардаку">
-            </a>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Панкейк</h3>
-            <p>Улюблений американський десерт - панкейки з шоколадом (витікає при розрізанні) з бананами та карамельним топінгом - #Смачнно_в_Бардаку рекомендує, друзі!</p>
-          </div>
-        </div>
-      </div>
-     </div>
-   </div>
-  </div> -->
-
-
-  <div class="menu" id="Menu">
-   <h2>Меню</h2>
-    <div class = "row" style="margin-top: 15px;">
-      <div class="col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/6.jpg" style="width:100%;"/></div>          
-      <div class="col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/1.jpg" style="width:100%;"/></div>
-    </div>
-    <div class = "row" style="margin-top: 15px;">
-      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/2.jpg" style="width:100%;"/></div>
-      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/3.jpg" style="width:100%;"/></div>
-  </div>
-    <div class = "row" style="margin-top: 15px;">
-      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 5px;"><img src="NewMenu/4.jpg" style="width:100%;"/></div>
-      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="margin-top: 55px;"><img src="NewMenu/5.jpg" style="width:100%;"/></div>
-   </div>
-   <div class = "row" style="margin-top: 15px;">
-      <div class=" col-md-offset-3 col-md-6 col-xs-12 col-sm-12"><img src="NewMenu/7.jpg" style="width:100%;"/></div>          
-    </div>   
-  </div>
-  </div>
-
-  <div class="findUs" id="FindUs">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-8">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0536965625347!2d30.506561755740663!3d50.4401004733228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfd6af29bde32c99!2z0JHQkNCg0JTQkNCa!5e0!3m2!1suk!2sua!4v1476784496152" 
-        width="100%" 
-        height="400" 
-        frameborder="0" style="border:1px solid black;" allowfullscreen></iframe>
-       </div> 
-       <div class="col-lg-4">
-         <p style="font-size:24px; font-weight: bold; text-transform: uppercase; margin-top:10px;">Контакти</p>
-         <p>Бар BARDUCK</p>
-         <p><b>вул. Тарасівська, 3</b></p>
-         <p>Резерв столика та інфа:</p>
-         <!--<p>
-          <a href="0444518838">(044) 451 88 38</a>
-         </p>-->
-         <p>
-          <a href="0634153331">(063) 415 33 31</a>
-         </p>
-          <p style="float:left">Ми працюємо:</p>
-          <p style="float:left;"> Пн-Чт: 11:00 - 23:00</p>
-          <p style="float:left;">Пт: 11:00 - 05:00</p>
-          </p>
-          <p style="float:left;">Сб: 16:00 - 05:00</p>
-          <p style="float:left;">Нд: 16:00 - 23:00</p>
-       </div>
-      </div>
-    </div>
-  </div>
-<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <span itemprop="вул.Тарасівська, 3"></span>
-  <span itemprop="Київ"></span>
-  <span itemprop="02000"></span>
-  <span itemprop="Київ"></span>
-  <span itemprop="Укаїна"></span>
-  <span itemprop="Бардак найкраще місце відпочинку"></span>
-</div>
-
-<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-  <span property="latitude" content="50.4402333,30.5062008,17"></span>
-  <span property="longitude" content="0.4402333!4d30.5083895"></span>
-</span>
-
-      <div id="RezervModal" class="modal fade" role="dialog">
-         <div class="modal-dialog">
-         <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Резервування столику Barduck</h4>
-      </div>
-      <div class="modal-body">
-       <div class="row" style="margin-bottom:5px;">
-        <div class="col-md-3">Ваше ім'я:<span style="color:red;">*</span></div>
-        <div class="col-md-3"><input type="text" placeholder="" id="ClientName"/>
-        </div>
-       </div>
-       <div class="row" style="margin-bottom:5px;">
-        <div class="col-md-3">Кількість осіб:<span style="color:red;">*</span></div>
-        <div class="col-md-3"><input type="number" min="1" max="15" id="ClientCount"/>
-        </div>
-       </div>
-       <div class="row" style="margin-bottom:5px;">
-        <div class="col-md-3">Час та дата:<span style="color:red;">*</span></div>
-        <div class="col-md-6">
-         <input type="time" id="TimeClient" style="margin-right:5px;"/>
-         <input type="date" id="ClientDay" min="2018-02-27"/>
-        </div>
-       </div>
-       <div class="row" style="margin-bottom:5px;">
-        <div class="col-md-3">Номер телефону<span style="color:red;">*</span>:</div>
-        <div class="col-md-3"><input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' id="ClientTel" title='Формат: 099 9999-9999)'> 
-        </div>
-       </div>
-      </div>
-      <div class="modal-footer">
-       <div style="float:left;">
-        <p style="text-align: left;">Деталі за телефонами:</p>
-        <p style="text-align: left;">(063) 415 33 31</p>
-       <!-- <p style="text-align: left;">(044) 451 88 38</p> -->
-        <div class="alert alert-warning" id="FailMail" role="alert" style="display: none;">
-          <a href="#" class="alert-link">Заповніть усі поля будь ласка</a>
-        </div>
-        <div class="alert alert-success" role="alert" id="TrueMail" style="display: none;">
-          <a href="#" class="alert-link">Столик успішно зарезервований чекайте на дзінок адміністратора!</a>
-        </div>
-       </div>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Скасувати</button>
-        <button type="button" class="btn btn-primary" id="Rezerv">Зарезервувати</button>
-      </div>
-         </div>
-        </div>     
-       </div>
-     </div> 
+    console.log(window.location.search.indexOf('affiliate_id=157933'));
+    if (window.location.search.indexOf('affiliate_id=157933') >= 0) {
+        facebookPixel();
+    }
+</script>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<script src="https://static.olymptrade.com/lands/common/pixels/traffic/main.js"></script>
 </body>
 </html>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!-- <script src="js/turn.min.js"></script>
-<script src="js/moon-sugar.min.js"></script> -->
-<script type="text/javascript">
-//MENU TURN JS
-/*REZERV SEND MAIL*/
-//  $(document).ready(function()
-//  {
-//   // moonSugar.init();
-//   /*Визначаємо розміри книжки для меню*/
-//   // var Wdth = window.innerWidth
-//   // var Hdth = Wdth/2*1.198871650211566+"px"
-//   // Wdth+="px"
-//   // $("#flipbook").turn({
-//   //   width:Wdth,
-//   //   height:Hdth,
-//   //   autoCenter: true
-//   // });
-//   //  $(".pager li").click(function()
-//   //  {
-//   //   var ID = $(this).attr("id")
-//   //   $("#flipbook").turn("page",ID) 
-//   //  })
-// //Реагуємо на скролл
-//  $(window).scroll(function() 
-//  {
-//   if(window.pageYOffset >=1100)
-//   {
-//    $("#flipbook").turn("page",3) 
-//   }
-//   if(window.pageYOffset <=1100) $("#flipbook").turn("page",1) 
-//  })
-
-// /*Розгортання слайдера для повнго прочитання тексту про робітника*/
-// // $(".slideMe").click(function()
-// // {
-// //  if($(this).parent().children(".aboutStuff").css("height") == "150px")
-// //  {
-// //   $(this).parent().children(".aboutStuff").animate({"height":"400px"},500)
-// //   $(this).html("Згорнути...")
-// //  }
-// //  else
-// //  {
-// //   $(this).parent().children(".aboutStuff").animate({"height":"150px"},500)
-// //   $(this).html("Розгорнути...")
-// //  }
-// })
-
-
-/*Резерв столику*/
-  $("#Rezerv").click(function()
-  {
-   if($("#ClientName").val().length == 0 || $("#ClientCount").val().length == 0 || 
-      $("#TimeClient").val().length == 0 || $("#ClientDay").val().length == 0 || $("#ClientTel").val().length == 0)
-   {
-    $("#FailMail").show()
-    setTimeout(function() {
-        $("#FailMail").hide();
-       }, 7000);
-   }
-   else
-   {
-    var ClientName  = $("#ClientName").val()
-    var ClientCount = $("#ClientCount").val() 
-    var TimeClient  = $("#TimeClient").val()
-    var ClientDay   = $("#ClientDay").val()
-    var ClientTel   = $("#ClientTel").val()
-    $.post("rezerv.php",
-    {
-     Name:ClientName,
-     Count:ClientCount,
-     Time:TimeClient,
-     Day:ClientDay,
-     Tel:ClientTel
-    },
-    function(data,status)
-     {
-      if(data == 200)
-      {
-       $("#TrueMail").show()
-       setTimeout(function() {
-        $("#TrueMail").hide();
-        $("#ClientName").val("");
-        $("#ClientCount").val("");
-        $("#TimeClient").val("");
-        $("#ClientDay").val("");
-        $("#ClientTel").val("");
-       }, 7000);
-      }
-      console.log(ClientName+" "+ClientCount+" "+TimeClient+" "+ClientDay+" "+ClientTel)
-     })
-   }
-  })
- </script>
