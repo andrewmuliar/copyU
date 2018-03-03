@@ -7,7 +7,7 @@ echo var_export($ar);
 $root = 'http://localhost/php_request/'; //host root for deploy url
 for($i = 0; $i < count($ar[1]); $i++) 
 {
- if(substr($ar[1][$i], 0, strlen($root)) == $root)
+ if(substr($ar[1][$i], 0, strlen($root)) == $root) // $ar[1] cause $ar[0] domain name
  {
   $ar[1][$i] = str_replace($root, $domain, $ar[1][$i]);
   //replace root on domain name
