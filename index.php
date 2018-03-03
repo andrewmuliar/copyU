@@ -31,7 +31,6 @@ function saveData(dataFile)
  })
 }
 
-
 //Getting img, script sources | link[href]
 function getWhatYouNeed(tagName)
 {
